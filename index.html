@@ -43,7 +43,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#home"><span class="laranja_escuro">V</span><span class="laranja_claro">nda</span></a>
+        <a class="navbar-brand" href="/"><img src="img/logo.png" height="75"></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -74,6 +74,7 @@
       </section><!-- /intro -->
 
              <!-- portfolio list -->
+        <span id="cases" style="margin-bottom:110px;"></span>
         <div class="container">
 
           <div class="row">
@@ -189,7 +190,7 @@
                 <p class="portfolio--paragraph">
                   Experimente a incrível flexibilidade de design e facilidade de revisão.
                 </p>
-                <a href="http://guides.vnda.com.br/" class="btn  btn--green">Veja nosso Guides e API</a>
+                <a href="http://guides.vnda.com.br/" class="btn  btn--green" target="_blank">Veja nosso Guides e API</a>
               </div>
           </div>
 
@@ -207,7 +208,7 @@
               <p class="contact--sub-title">Utilize os campos abaixo para enviar sua mensagem.</p>
 
                 <!-- comment form -->
-                <form method="post" action="send-email.php" id="contact-form" class="form-horizontal" role="form">
+                <form method="post" action="#" id="contact-form" class="form-horizontal" role="form">
                   <div class="form-group">
                     <label for="name" class="col-12  col-lg-2  control-label">Name:</label>
                     <div class="col-12  col-lg-10">
@@ -221,7 +222,7 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="message" class="col-12  col-lg-2  control-label">Message:</label>
+                    <label for="message" class="col-12  col-lg-2  control-label">Mensagem:</label>
                     <div class="col-12  col-lg-10">
                       <textarea class="form-control" rows="3" name="message" id="message"></textarea>
                     </div>
@@ -229,7 +230,7 @@
                   <div class="form-group">
                     <div class="col-12  col-lg-2">&nbsp;</div>
                     <div class="col-12  col-lg-10">
-                      <button type="submit" class="btn btn--green">Send</button>
+                      <button type="submit" class="btn btn--green">Enviar</button>
                     </div>
                   </div>
                 </form><!-- /comment form -->
@@ -336,10 +337,10 @@
     <!-- twitter -->
     <section class="tweet">
       <div class="container">
-        <span class="icon-twitter"></span>
-        <h3 class="tweet--tweet">Why not drop us a line on Twitter?</h3>
-        <p class="tweet--secondary">We'd love to hear from you!</p>
-        <a href="http://www.twitter.com/nerdswithhair" target="_blank" class="btn  btn--green">@nerdswithhair</a>
+        <span class="icon-mail"></span>
+        <h3 class="tweet--tweet">Por que não enviar um email?</h3>
+        <p class="tweet--secondary">Nos conte sua demanda</p>
+        <a href="mailto:contato@vnda.com.br" class="btn  btn--green">contato@vnda.com.br</a>
       </div>
     </section><!-- /twitter -->
 
@@ -349,7 +350,7 @@
         <div class="row">
           <ul class="list-unstyled  col-12  col-sm-3  col-lg-2">
             <li><a href="http://guides.vnda.com.br/lib/guides.html" target="_blank">Guides</a></li>
-            <li><a href="http://guides.vnda.com.br/lib/guides.html" target="_blank">Api</a></li>
+            <li><a href="http://guides.vnda.com.br/lib/guides.html" target="_blank">API</a></li>
             <li><a href="https://github.com/vnda" target="_blank">Github</a></li>
             <li><a href="https://www.facebook.com/vnda.e" target="_blank">Facebook</a></li>
           </ul>
@@ -360,10 +361,7 @@
             <li><a href="#contato">Contato</a></li>
           </ul>
           <div class="col-12  col-sm-7  col-lg-5  col-lg-offset-3  text-right  hard--right">
-            <h3 class="footer--main-logo">ecommerce</h3>
-            <p>
-              Tecnologia commerce para varejo <a href="http://www.nerdswithhair.com" target="_blank" class="underline">Nerds with Hair</a> &#169; 2013
-            </p>
+            <h3 class="footer--main-logo"><a href="/" target="_blank" title="Vnda"><img src="img/logo.png" height="100"></a></h3>
           </div>
         </div>
       </div>
@@ -392,6 +390,14 @@
 
     <!-- Optionally enable responsive features in IE8. Respond.js can be obtained from https://github.com/scottjehl/Respond -->
     <script src="js/respond.min.js"></script>
-
+    <!-- Google Tag Manager -->
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5LLB"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5LLB');</script>
+  <!-- End Google Tag Manager -->
   </body>
 </html>

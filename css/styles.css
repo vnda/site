@@ -122,7 +122,7 @@
 .icon-opera:before { content: '\e828'; } /* '' */
 .icon-ie:before { content: '\e82f'; } /* '' */
 .icon-menu:before { content: '\e830'; } /* '' */
-.icon-mail:before { content: '\e803'; } /* '' */
+.icon-mail:before { content: '\e803'; font-size: 20px;} /* '' */
 .icon-heart:before { content: '\e835'; } /* '' */
 .icon-heart-empty:before { content: '\e836'; } /* '' */
 .icon-star:before { content: '\e83b'; } /* '' */
@@ -658,7 +658,7 @@ fieldset[disabled] .btn {
 /* MAIN LOGO */
 .navbar-brand {
     font-family: 'montserratregular', Arial, sans-serif;
-    padding: 35px 0px 30px;
+    padding: 10px 0px 30px;
     margin-right: 0px;
     margin-left: 0px;
     font-size: 35px;
@@ -957,7 +957,7 @@ table td .btn {
     position: absolute;
     top: 0;
     left: 0;
-    background: #243546;
+    background: #34495e;
     color: #fff;
 }
 
@@ -971,7 +971,7 @@ table td .btn {
     text-decoration: none;
     padding: 13px 20px 0px;
     display: inline-block;
-    background: #50cb81;
+    background: #F88D5B;
     color: #fff;
     height: 100%;
     font-family: 'montserratbold', Arial, sans-serif;
@@ -980,7 +980,7 @@ table td .btn {
 
 .portfolio--list figcaption a.green:hover {
     text-decoration: none;
-    background-color: #3edc7e;
+    background-color: #F88D5B;
 }
 
 .portfolio--feature {
@@ -1117,6 +1117,7 @@ label.valid {
     -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
     -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
     transition: transform 0.4s, opacity 0.1s 0.3s;
+    border-color: #34495e;
 }
 
 .no-touch .cs-style-3 figure:hover figcaption,
