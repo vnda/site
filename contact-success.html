@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- page title goes here -->
+    <title>Envy Theme - Contact (By Nerds with Hair)</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <!-- add your name or URL here -->
+    <meta name="author" content="YOUR NAME OR URL">
+    <!-- add a description of your site/company/product here -->
+    <meta name="description" content="YOUR DESCRIPTION HERE">
+    <!-- add the keywords here that represent your site, an example few have been added -->
+    <meta name="keywords" content="web design, creative, mobile, app, design studio, agency">
+    <!-- add your name or URL here -->
+    <meta name="publisher" content="YOUR NAME OR URL HERE">
+    <meta name="rating" content="General">
+    <meta name="revisit-after" content="30 days">
+    <!-- this allows Google to follow your page -->
+    <meta name="robots" content="INDEX,FOLLOW">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <!-- Theme styles -->
+    <link href="css/styles.css" rel="stylesheet" media="screen">
+    <!-- media-queries -->
+    <link href="css/media-queries.css" rel="stylesheet" media="screen">
+
+    <!-- modernizr -->
+    <script src="js/modernizr.custom.js"></script>     
+  </head>
+  <body>
+
+  <!-- nav -->
+  <nav class="navbar  navbar-fixed-top" role="navigation">
+    <!-- container -->
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Envy</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse  navbar-collapse  navbar-ex1-collapse">
+        <ul class="nav  navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="shortcodes.html">Shortcodes</a></li>
+            <li><a href="archives.html">Archives</a></li>
+            <li class="active">Contact</li>
+        </ul>
+      </div><!-- /navbar-collapse -->
+    </div><!-- /container -->
+  </nav><!-- /nav --> 
+
+    <!-- masthead -->
+    <div class="jumbotron">
+      <h2 class="jumbotron--title">Envy</h2>
+      <p class="jumbotron--sub-title">Say hello.</p>
+    </div><!-- /masthead -->
+
+      <!-- intro -->
+      <section class="intro">
+        <div class="container">
+          <h3>
+            Contact us, we don't bite.
+          </h3>
+        </div>
+      </section><!-- /intro -->   
+      
+        <!-- main-content -->
+        <div class="container  main-content">
+
+          <div class="row">
+
+            <!-- left content -->
+            <div class="col-lg-8">
+
+              <!-- success alert box -->
+              <div class="alert  alert-dismissable  alert-success  push--bottom__huge">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <strong>Success!</strong> Your email has been sent, we'll get back to you asap!
+              </div><!-- /success alert box -->
+
+              <h4 class="contact--title">Get in touch with us</h4>
+              <p class="contact--sub-title">Please be nice, nobody likes a douche bag.</p>
+
+                <!-- comment form -->
+                <form method="post" action="send-email.php" id="contact-form" class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label for="name" class="col-12  col-lg-2  control-label">Name:</label>
+                    <div class="col-12  col-lg-10">
+                      <input type="text" class="form-control" name="name" id="name">
+                    </div>
+                  </div>                  
+                  <div class="form-group">
+                    <label for="email" class="col-12  col-lg-2  control-label">Email:</label>
+                    <div class="col-12  col-lg-10">
+                      <input type="email" class="form-control" name="email" id="email">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="message" class="col-12  col-lg-2  control-label">Message:</label>
+                    <div class="col-12  col-lg-10">
+                      <textarea class="form-control" rows="3" name="message" id="message"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-12  col-lg-2">&nbsp;</div>
+                    <div class="col-12  col-lg-10">
+                      <button type="submit" class="btn btn--green">Send</button>
+                    </div>
+                  </div>
+                </form><!-- /comment form -->  
+
+            </div><!-- /left content -->
+
+              <!-- right content -->
+              <div class="col-lg-4  contact--right-hand-bar">
+
+                <hr class="hidden-lg">
+
+                <!-- row -->
+                <div class="row">
+
+                  <div class="col-xs-6  col-sm-6  col-md-6  col-lg-12">
+                  <h4 class="contact--title">Our HQ is at</h4>
+                    <address class="contact--main-address">
+                      Nerds with Hair<br>
+                      2 Nerds with Hair<br>
+                      Barnet Quarter<br>
+                      York<br>
+                      HA1 1R<br>
+                    </address>
+                  </div>
+
+                  <div class="col-xs-6  col-sm-6  col-md-6  col-lg-12">
+                    <h4 class="contact--title">Alternatively</h4>
+                    <p class="contact--get-in-touch">Some other ways to get in touch:</p>
+                    <ul class="list-unstyled  contact--contact-options">
+                      <li><a href="#">Email</a></li>
+                      <li><a href="#">Skype</a></li>
+                      <li><a href="#">Tweet</a></li>
+                      <li><a href="#">Dribbble</a></li>
+                    </ul>
+                  </div>
+
+                </div><!-- row -->
+
+              </div><!-- /right content -->
+
+          </div><!-- row -->
+
+        </div><!-- /main-content -->  
+
+        <!-- twitter -->
+        <section class="tweet">
+          <div class="container">
+            <span class="icon-twitter"></span>
+            <h3 class="tweet--tweet">Why not drop us a line on Twitter?</h3>
+            <p class="tweet--secondary">We'd love to hear from you!</p>
+            <a href="http://www.twitter.com/nerdswithhair" target="_blank" class="btn  btn--green">@nerdswithhair</a>
+          </div>
+        </section><!-- /twitter -->
+
+    <!-- footer -->
+    <section class="footer  flush--top">
+      <div class="container">
+        <div class="row">
+          <ul class="list-unstyled  col-12  col-sm-3  col-lg-2">
+            <li><a href="mailto:info@nerdswithhair.com">Email</a></li>
+            <li><a href="http://www.facebook.com/nerdswithhair" target="_blank">Facebook</a></li>
+            <li><a href="http://www.twitter.com/nerdswithhair" target="_blank">Tweet</a></li>
+          </ul>
+          <ul class="list-unstyled  col-12  col-sm-2  col-lg-2">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="shortcodes.html">Shortcodes</a></li>
+            <li><a href="archives.html">Archives</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="col-12  col-sm-7  col-lg-5  col-lg-offset-3  text-right  hard--right">
+            <h3 class="footer--main-logo">Envy</h3>
+            <p>
+              Designed and built by <a href="http://www.nerdswithhair.com" target="_blank" class="underline">Nerds with Hair</a> &#169; 2013
+            </p>
+          </div>
+        </div>
+      </div>
+    </section><!-- footer -->
+
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- form validation plugin -->
+    <script src="js/jquery.validate.min.js"></script> 
+    <script src="js/envy-form-validation.js"></script> 
+
+    <!-- Optionally enable responsive features in IE8. Respond.js can be obtained from https://github.com/scottjehl/Respond -->
+    <script src="js/respond.min.js"></script>
+
+  </body>
+</html>
