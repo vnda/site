@@ -80,28 +80,28 @@
   font-style: normal;
   font-weight: normal;
   speak: none;
- 
+
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
   margin-right: .2em;
   text-align: center;
   /* opacity: .8; */
- 
+
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
-     
+
   /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
- 
+
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
   margin-left: .2em;
- 
+
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
- 
+
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
@@ -203,8 +203,8 @@ a:hover, a:active, a:focus {
     outline: none;
 }
 
-input::-moz-focus-inner { 
-    border: 0; 
+input::-moz-focus-inner {
+    border: 0;
 }
 
 .form-control {
@@ -328,7 +328,7 @@ h6,
 h1,
 h2,
 h3,
-h4 {  
+h4 {
     margin-top: 0px;
     margin-bottom: 40px;
 }
@@ -359,7 +359,7 @@ h4,
 h5,
 .h5 {
     font-size: 20px;
-    font-size: 2rem; 
+    font-size: 2rem;
     margin-bottom: 15px;
 }
 
@@ -523,7 +523,7 @@ fieldset[disabled] .btn {
 
 /* GREEN BUTTON */
 .btn--green {
-    background-color: #50cb81;
+    background-color: #F88D5B;
 }
 
 .btn--green:hover,
@@ -669,15 +669,15 @@ fieldset[disabled] .btn {
 .nav-tabs {
     border-bottom: 0px;
 }
-.nav-tabs > li > a { 
+.nav-tabs > li > a {
     background-color: #34495e;
     color: #fff;
     border: 2px solid #fff;
     border-bottom: 1px solid #fff;
     text-decoration: none;
     padding: 11px 30px;
-    margin-right: -2px;  
-    font-weight: 700;  
+    margin-right: -2px;
+    font-weight: 700;
 }
 
 .nav-tabs > li.active > a,
@@ -700,7 +700,7 @@ fieldset[disabled] .btn {
 .nav-tabs-content {
     border: 2px solid #fff;
     border-radius: 0px 4px 4px 4px;
-    padding: 24px 24px 16px;  
+    padding: 24px 24px 16px;
     background-color: #202f3e;
     margin-bottom: 20px;
 }
@@ -795,15 +795,15 @@ h3.table--header {
     margin-bottom: 10px;
 }
 
-.table-bordered { 
+.table-bordered {
     border: 2px solid #fff;
 }
 
-.table-bordered > thead > tr > th, 
-.table-bordered > tbody > tr > th, 
-.table-bordered > tfoot > tr > th, 
-.table-bordered > thead > tr > td, 
-.table-bordered > tbody > tr > td, 
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > td {
     border: 2px solid #fff;
 }
@@ -812,11 +812,11 @@ h3.table--header {
     padding-top: 10px;
 }
 
-.table thead > tr > th, 
-.table tbody > tr > th, 
-.table tfoot > tr > th, 
-.table thead > tr > td, 
-.table tbody > tr > td, 
+.table thead > tr > th,
+.table tbody > tr > th,
+.table tfoot > tr > th,
+.table thead > tr > td,
+.table tbody > tr > td,
 .table tfoot > tr > td {
     padding: 15px;
 }
@@ -826,7 +826,7 @@ table td .btn {
     margin-bottom: 0px;
 }
 
-.table-striped > tbody > tr:nth-child(odd) > td, 
+.table-striped > tbody > tr:nth-child(odd) > td,
 .table-striped > tbody > tr:nth-child(odd) > th {
     background-color: #202f3e;
 }
@@ -961,7 +961,7 @@ table td .btn {
     padding: 13px 20px 0px;
 }
 
-.portfolio--list figcaption a.green {    
+.portfolio--list figcaption a.green {
     text-align: center;
     text-decoration: none;
     padding: 13px 20px 0px;
@@ -970,11 +970,11 @@ table td .btn {
     color: #fff;
     height: 100%;
     font-family: 'montserratbold', Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;    
+    -webkit-font-smoothing: antialiased;
 }
 
 .portfolio--list figcaption a.green:hover {
-    text-decoration: none;    
+    text-decoration: none;
     background-color: #3edc7e;
 }
 
@@ -1038,7 +1038,7 @@ address.contact--main-address {
 
 .contact--contact-options a {
     font-family: 'signikaregular', arial, sans-serif;
-    font-weight: 100; 
+    font-weight: 100;
     color: #96aabd;
     text-decoration: none;
 }
@@ -1050,7 +1050,7 @@ address.contact--main-address {
 .contact--get-in-touch {
     font-family: 'signikaregular', arial, sans-serif;
     font-weight: 100;
-    color: #96aabd; 
+    color: #96aabd;
     margin-bottom: 20px;
 }
 
@@ -1160,7 +1160,7 @@ ul.tags {
     margin-right: 5px;
     margin-top: 10px;
     font-size: 15px;
-    font-size: 1.5rem;    
+    font-size: 1.5rem;
 }
 
 .tags li p {
@@ -1308,7 +1308,7 @@ h6 span.blog-comments--tags {
 .blog--date {
     color: #96aabd;
     font-family: 'signikaregular', Arial, sans-serif;
-    font-size: 13px; 
+    font-size: 13px;
     font-size: 1.3rem;
 }
 
@@ -1348,41 +1348,41 @@ p.contact--sub-title {
     font-size: 1.5rem;
 }
 
-.pagination > li > a, 
+.pagination > li > a,
 .pagination > li > span  {
     background-color: #34495e;
     color: #fff;
     border: 2px solid #fff;
-    border-right: none; 
+    border-right: none;
 }
 
-.pagination > li:first-child > a, 
+.pagination > li:first-child > a,
 .pagination > li:first-child > span  {
     border-left: 2px solid #fff;
 }
 
-.pagination > li:last-child > a, 
+.pagination > li:last-child > a,
 .pagination > li:last-child > span  {
     border-right: 2px solid #fff;
 }
 
-.pagination > li > a:hover, 
+.pagination > li > a:hover,
 .pagination > li > span:hover  {
     background-color: #fff;
     color: #34495e;
 }
 
-.pagination > .active > a, 
+.pagination > .active > a,
 .pagination > .active > span,
-.pagination > .active > a:hover, 
+.pagination > .active > a:hover,
 .pagination > .active > span:hover {
     background-color: #202f3e;
     color: #fff;
 }
 
-.pagination > .disabled > a, 
+.pagination > .disabled > a,
 .pagination > .disabled > span,
-.pagination > .disabled > a:hover, 
+.pagination > .disabled > a:hover,
 .pagination > .disabled > span:hover {
     background-color: #34495e;
     color: #9aa4af;
@@ -1515,8 +1515,8 @@ img.portfolio--breakdown {
 
 .footer .container .row {
     margin-right: 0px;
-    margin-left: 0px; 
-}  
+    margin-left: 0px;
+}
 
 .footer a {
     color: #fff;
@@ -1570,7 +1570,7 @@ body.error-page {
 
 /* intro */
  .intro {
-    background-color: #50cb81;
+    background-color: #F88D5B;
     color: #fff;
     padding-top: 110px;
     padding-bottom: 70px;
@@ -1614,7 +1614,7 @@ pre {
     margin-bottom: 30px;
 }
 
-.media, 
+.media,
 .media .media {
     margin-top: 0px;
     margin-bottom: 15px;
@@ -1648,7 +1648,7 @@ pre {
 }
 
 .tweet a:hover {
-   text-decoration: underline; 
+   text-decoration: underline;
 }
 
 .tweet a.btn {
@@ -1660,5 +1660,5 @@ pre {
     color: #6a6e74;
     font-size: 20px;
     font-size: 2rem;
-    margin-bottom: 30px;    
+    margin-bottom: 30px;
 }
