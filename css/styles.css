@@ -8,6 +8,10 @@
 /*------------------------------------*\
     $FONTS
 \*------------------------------------*/
+.laranja_escuro {
+    color: #b24d19 }
+.laranja_claro {
+    color: #F88D5B }
 
 /* montserrat bold */
 @font-face {
@@ -612,6 +616,8 @@ fieldset[disabled] .btn {
     padding-left: 0px;
     padding-right: 0px;
 }
+.navbar-brand span {
+    color: #b24d19; }
 
 .navbar-nav li {
     padding-top: 20px;
