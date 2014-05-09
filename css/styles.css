@@ -242,7 +242,7 @@ body {
     line-height: 30px; /* base line height is 20px */
     line-height: 1.5em; /* base line height is 20px */
     color: #fff;
-    background-color: #34495e;
+    background-color: #243546;
 }
 
 hr {
@@ -636,8 +636,7 @@ fieldset[disabled] .btn {
 
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a:focus {
-    color: #fff!important;
-    background: #50cb81!important;
+    color: #b24d19!important;
     border: 0px!important;
 }
 
@@ -912,6 +911,7 @@ table td .btn {
 .portfolio--lr {
     padding-top: 90px;
     padding-bottom: 70px;
+    background: #34495e;
 }
 
 .portfolio--title {
@@ -1508,7 +1508,7 @@ img.portfolio--breakdown {
 \*------------------------------------*/
 
 .footer {
-    background-color: #F88D5B;
+    background-color: #ededed;
     color: #fff;
     padding-top: 60px;
     padding-bottom: 60px;
