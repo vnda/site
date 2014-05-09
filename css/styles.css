@@ -534,7 +534,7 @@ fieldset[disabled] .btn {
 .btn--green:focus,
 .btn--green:active,
 .btn--green.active {
-    background-color: #3edc7e;
+    background-color: #FFD867;
 }
 
 /* BLUE BUTTON */
@@ -616,8 +616,7 @@ fieldset[disabled] .btn {
     padding-left: 0px;
     padding-right: 0px;
 }
-.navbar-brand span {
-    color: #b24d19; }
+
 
 .navbar-nav li {
     padding-top: 20px;
@@ -1509,7 +1508,7 @@ img.portfolio--breakdown {
 \*------------------------------------*/
 
 .footer {
-    background-color: #50cb81;
+    background-color: #F88D5B;
     color: #fff;
     padding-top: 60px;
     padding-bottom: 60px;
