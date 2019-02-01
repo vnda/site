@@ -1,0 +1,52 @@
+* {
+    font-family: $font-family;
+    &:focus{
+        outline: none;
+    }
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background: white;
+}
+p{
+    margin: 0;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+figure{
+    margin: 0;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include media('xs'){
+        flex-direction: column;
+    }
+}
