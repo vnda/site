@@ -5,8 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vnda - Tecnologia em Ecommerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
     <link rel="stylesheet" href="/site-vnda/assets/stylesheets/main.css">
     <link rel="stylesheet" href="/site-vnda/assets/stylesheets/pages/home.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="/site-vnda/assets/images/favicon/favicon.ico" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/site-vnda/assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/site-vnda/assets/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/site-vnda/assets/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/site-vnda/assets/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/site-vnda/assets/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/site-vnda/assets/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/site-vnda/assets/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/site-vnda/assets/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/site-vnda/assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/site-vnda/assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/site-vnda/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/site-vnda/assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/site-vnda/assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site-vnda/assets/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/site-vnda/assets/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+ 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -22,16 +44,16 @@
                 <div class="links">
                     <ul>
                         <li>
-                            <a href="http://ajuda.vnda.com.br/">Ajuda</a>
+                            <a target="_blank" href="http://ajuda.vnda.com.br/">Ajuda</a>
                         </li>
                         <li>
-                            <a href="https://potencializa.vnda.com.br/">Potencializa</a>
+                            <a target="_blank" href="https://potencializa.vnda.com.br/">Potencializa</a>
                         </li>
                         <li>
-                            <a href="https://sites.google.com/vnda.com.br/docs/api">API</a>
+                            <a target="_blank" href="https://sites.google.com/vnda.com.br/docs/api">API</a>
                         </li>
                         <li>
-                            <a href="https://sites.google.com/vnda.com.br/docs/vagas">Vagas</a>
+                            <a target="_blank" href="https://sites.google.com/vnda.com.br/docs/vagas">Vagas</a>
                         </li>
                     </ul>
                 </div>
@@ -52,9 +74,9 @@
                             <li>
                                 <a href="#cases" data-ancora>Cases</a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="#plataforma" data-ancora>Plataforma</a>
-                            </li>
+                            </li> -->
                             <li>
                                 <a href="#recursos" data-ancora>Recursos</a>
                             </li>
@@ -72,9 +94,9 @@
     <main>
         <section class="chamada">
             <div class="container">
-                <h1>Acreditamos em relações de valor entre pessoas e marcas​</h1>
+                <h1>Acreditamos em relações de valor entre pessoas e marcas.​</h1>
                 <!-- <h2>Descrição com link nos textos '<a href="#cases" data-ancora>cases</a>', fazendo referência a '<a href="#plataforma" data-ancora>plataforma</a>' e citanto os '<a href="#recursos" data-ancora>recursos</a>' como diferênciais da plataforma</h2> -->
-                <h2>​​Somos uma plataforma de <a data-troca data-palavra1="'ecommerce'" data-palavra2="'varejo'" data-palavra3="'relacionamento'">'ecommerce'</a><br> que ajuda marcas a <a data-troca data-palavra1="'crescer'" data-palavra2="'desenvolver'" data-palavra3="'criar'">'crescer'</a><br> seus negócios alinhado com seus propósitos</h2>
+                <h2>​​Somos uma plataforma de <a data-troca data-palavra1="ecommerce" data-palavra2="varejo" data-palavra3="relacionamento">ecommerce</a><br> que ajuda marcas a <a data-troca data-palavra1="crescer" data-palavra2="desenvolver" data-palavra3="criar">crescer</a><br> seus negócios alinhado com seus propósitos.</h2>
                 <!-- <a href="" class="link">Sobre nós                    
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" version="1.1" style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;" viewBox="0 0 454 800" x="0px" y="0px" fill-rule="evenodd" clip-rule="evenodd"><defs><style type="text/css">                    
                         .fil0 {fill:#000000}                    
@@ -82,7 +104,101 @@
                 </a> -->
             </div>
         </section>
-        <section class="video" id="cases">
+        <section class="cases-carrossel" id="cases">
+            <div class="container">
+                <div class="slider-cases swiper-container">
+                    <div class="slider swiper-wrapper">
+                        <div class="banner item swiper-slide">
+                            <div class="image">
+                                <img src="/site-vnda/assets/images/cases/bolovo.jpg" alt="" class="img-responsive">
+                                <div class="logo">
+                                    <img src="/site-vnda/assets/images/cases/logo_bolovo.png" alt="">
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p><strong>Bolovo</strong></p>
+                                <a href="https://www.bolovo.com.br/" target="_blank">Ver mais</a>
+                            </div>
+                        </div>
+                        <div class="banner item swiper-slide">
+                            <div class="image">
+                                <img src="/site-vnda/assets/images/cases/insecta.jpg" alt="" class="img-responsive">
+                                <div class="logo">
+                                    <img src="/site-vnda/assets/images/cases/logo_insecta.png" alt="">
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p><strong>Insecta Shoes</strong></p>
+                                <a href="https://www.insectashoes.com/" target="_blank">Ver mais</a>
+                            </div>
+                        </div>
+                        <div class="banner item swiper-slide">
+                            <div class="image">
+                                <img src="/site-vnda/assets/images/cases/livo.jpg" alt="" class="img-responsive">
+                                <div class="logo">
+                                    <img src="/site-vnda/assets/images/cases/logo_livo.png" alt="">
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>A <strong>Livo</strong> entrega design através de óculos de sol e de grau, iniciando a comercialização por ecommerce e expandindo para mais de dez lojas físicas.</p>
+                                <a href="https://www.livo.com.br" target="_blank">Ver mais</a>
+                            </div>
+                        </div>
+                        <div class="banner item swiper-slide">
+                            <div class="image">
+                                <img src="/site-vnda/assets/images/cases/thebodyshop.jpg" alt="" class="img-responsive">
+                                <div class="logo">
+                                    <img src="/site-vnda/assets/images/cases/logo_thebodyshop.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p><strong>Thebodyshop</strong></p>
+                                <a href="https://www.thebodyshop.com.br/" target="_blank">Ver mais</a>
+                            </div>
+                        </div>
+                        <div class="banner item swiper-slide">
+                            <div class="image">
+                                <img src="/site-vnda/assets/images/cases/haight.jpg" alt="" class="img-responsive">
+                                <div class="logo">
+                                    <img src="/site-vnda/assets/images/cases/logo_haight.png" alt="">
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>A <strong>Haight</strong> transmite toda a sua autenticidade para moda praia num site absolutamente conceitual, que suporta uma comercialização por loja própria e multimarcas. </p>
+                                <a href="https://www.haight.com.br/" target="_blank">Ver mais</a>
+                            </div>
+                        </div>
+                        <div class="banner item swiper-slide">
+                            <div class="image">
+                                <img src="/site-vnda/assets/images/cases/vinci.jpg" alt="" class="img-responsive">
+                                <div class="logo">
+                                    <img src="/site-vnda/assets/images/cases/logo_vinci.png" alt="">
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p><strong>Vinci Shoes</strong></p>
+                                <a href="https://www.vincishoes.com.br" target="_blank">Ver mais</a>
+                            </div>
+                        </div>
+                        <div class="banner item swiper-slide">
+                            <div class="image">
+                                <img src="/site-vnda/assets/images/cases/ado_atelier.jpg" alt="" class="img-responsive">
+                                <div class="logo">
+                                    <img src="/site-vnda/assets/images/cases/logo_ado.png" alt="">
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p><strong>Adô Atelier</strong></p>
+                                <a href="https://www.adoatelier.com/" target="_blank">Ver mais</a>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> 
+            </div>
+        </section>
+        <!-- <section class="video" id="cases">
             <div class="container">
                 <div class="content">
                     <img src="https://placehold.it/1200x600" alt="">
@@ -96,7 +212,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- <section class="cases" id="cases">
             <div class="container">
                 <div class="title">
@@ -175,7 +291,7 @@
                 </div>
             </div>
         </section> -->
-        <section class="plataforma" id="plataforma">
+        <!-- <section class="plataforma" id="plataforma">
             <div class="container">
                 <div class="title">
                     <div class="left">
@@ -236,7 +352,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section class="recursos" id="recursos">
             <div class="container">
                 <div class="title">
@@ -244,44 +360,81 @@
                         <h2>Recursos</h2>
                     </div>
                     <div class="right">
-                        <p>Conheça os recursos para viabilizar a apresentação do negócio</p>
+                        <p>Conheça os recursos para viabilizar a apresentação do negócio.</p>
                     </div>
                 </div>
                 <div class="content">
                     <div class="item">
                         <div class="left">
-                            <img src="https://placehold.it/100x100" alt="">
+                            <img src="/site-vnda/assets/images/recursos/usabilidade.png" alt="">
                         </div>
                         <div class="right">
-                            <h6>Lorem Ipsum</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna nisi, maximus nec dictum hendrerit, tincidunt nec urna. In hac habitasse platea dictumst.</p>
+                            <h6>Usabilidade</h6>
+                            <p>Gestão intuitiva e completa que elimina treinamentos e garante agilidade nos processos.</p>
                         </div>
                     </div>
                     <div class="item">
                         <div class="left">
-                            <img src="https://placehold.it/100x100" alt="">
+                            <img src="/site-vnda/assets/images/recursos/omni.png" alt="">
                         </div>
                         <div class="right">
-                            <h6>Lorem Ipsum</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna nisi, maximus nec dictum hendrerit, tincidunt nec urna. In hac habitasse platea dictumst.</p>
+                            <h6>O​mnichannel</h6>
+                            <p>Interações comerciais com lojas físicas e outros canais comerciais.</p>
                         </div>
                     </div>
                     <div class="item">
                         <div class="left">
-                            <img src="https://placehold.it/100x100" alt="">
+                            <img src="/site-vnda/assets/images/recursos/relacionamento.png" alt="">
                         </div>
                         <div class="right">
-                            <h6>Lorem Ipsum</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna nisi, maximus nec dictum hendrerit, tincidunt nec urna. In hac habitasse platea dictumst.</p>
+                            <h6>Relacionamento</h6>
+                            <p>Possibilita fluxos de relacionamento com base em ações de relacionamento.</p>
                         </div>
                     </div>
                     <div class="item">
                         <div class="left">
-                            <img src="https://placehold.it/100x100" alt="">
+                            <img src="/site-vnda/assets/images/recursos/pagamento.png" alt="">
                         </div>
                         <div class="right">
-                            <h6>Lorem Ipsum</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna nisi, maximus nec dictum hendrerit, tincidunt nec urna. In hac habitasse platea dictumst.</p>
+                            <h6>Pagamentos</h6>
+                            <p>Tratamento de pagamentos diretamente e de forma inteligente com os principais pagamentos do mercado.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <div class="left">
+                            <img src="/site-vnda/assets/images/recursos/entregas.png" alt="">
+                        </div>
+                        <div class="right">
+                            <h6>Entregas</h6>
+                            <p>Completo mix de soluções para entregas, rastreio e agendamento.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="left">
+                            <img src="/site-vnda/assets/images/recursos/integracoes.png" alt="">
+                        </div>
+                        <div class="right">
+                            <h6>Diversas Integrações</h6>
+                            <p>Integração nativa com dezenas de ERPs e outros serviços de mercado.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="left">
+                            <img src="/site-vnda/assets/images/recursos/api.png" alt="">
+                        </div>
+                        <div class="right">
+                            <h6>API Aberta</h6>
+                            <p>Aberta para qualquer integração para otimização e personalização de fluxos.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="left">
+                            <img src="/site-vnda/assets/images/recursos/ativacao.png" alt="">
+                        </div>
+                        <div class="right">
+                            <h6>Ativação</h6>
+                            <p>Orientada para crescimento de visitas por tecnologia nativas e ações mapeadas.</p>
                         </div>
                     </div>
                 </div>
@@ -294,13 +447,13 @@
                         <h2>Contato</h2>
                     </div>
                     <div class="right">
-                        <p>Gostaríamos muito de falar sobre como podemos trabalhar juntos</p>
+                        <p>Gostaríamos muito de falar sobre como podemos trabalhar junto.s</p>
                     </div>
                 </div>
                 <div class="content">
-                    <form action="">
+                    <form id="form-contato">
                         <div class="field">
-                            <input type="text" name="nome" placeholder=" " id="nome" required>
+                            <input type="text" name="name" placeholder=" " id="nome" required>
                             <label for="nome">Nome</label>
                         </div>
                         <div class="field">
@@ -308,7 +461,7 @@
                             <label for="email">E-mail</label>
                         </div>
                         <div class="field">
-                            <input type="tel" name="telefone" placeholder=" " id="telefone" required>
+                            <input type="tel" name="phone" placeholder=" " id="telefone" required>
                             <label for="telefone">Telefone</label>
                         </div>
                         <div class="field">
@@ -335,16 +488,16 @@
                 <div class="menu">
                     <ul>
                         <li>
-                            <a href="http://ajuda.vnda.com.br/">Ajuda</a>
+                            <a target="_blank" href="http://ajuda.vnda.com.br/">Ajuda</a>
                         </li>
                         <li>
-                            <a href="https://potencializa.vnda.com.br/">Potencializa</a>
+                            <a target="_blank" href="https://potencializa.vnda.com.br/">Potencializa</a>
                         </li>
                         <li>
-                            <a href="https://sites.google.com/vnda.com.br/docs/api">API</a>
+                            <a target="_blank" href="https://sites.google.com/vnda.com.br/docs/api">API</a>
                         </li>
                         <li>
-                            <a href="https://sites.google.com/vnda.com.br/docs/vagas">Vagas</a>
+                            <a target="_blank" href="https://sites.google.com/vnda.com.br/docs/vagas">Vagas</a>
                         </li>
                     </ul>
                 </div>
@@ -357,7 +510,7 @@
                         </a>
                     </h1>
                 </div>
-                <div class="links">
+                <!-- <div class="links">
                     <ul>
                         <li>
                             <a href="http://ajuda.vnda.com.br/">Ajuda</a>
@@ -366,7 +519,7 @@
                             <a href="https://potencializa.vnda.com.br/">Potencializa</a>
                         </li>
                     </ul>
-                </div>
+                </div> -->
             </div>
             <div class="copy">
                 <span>Vnda - Tecnologia em Ecommerce</span>
@@ -375,5 +528,6 @@
     </footer>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
 <script src="/site-vnda/assets/javascripts/app.js"></script>
 </html>

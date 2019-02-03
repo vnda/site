@@ -76,8 +76,101 @@
     }
   }
 }
+.cases-carrossel{
+  .container{
+    position: relative;
+  }
+  .swiper-button-next, .swiper-button-prev{
+    position: absolute;
+    z-index: 10;
+    width: 46px;
+    height: 46px;
+    background-color: #fff; 
+    border-radius: 50%;
+    overflow: hidden;
+    color: #32325d;
+    cursor: pointer;
+  }
+  .swiper-button-next {
+    background-image: url('../../images/arrow.svg');
+    right: -25px;
+  }  
+  .swiper-button-prev {
+    background-image: url('../../images/arrow.svg');
+    transform: rotate(180deg);
+    left: -25px;
+  }
+  .slider-cases{
+    background: white;
+    box-shadow: 0 30px 60px -12px rgba(50,50,93,.25), 0 18px 36px -18px rgba(0,0,0,.3);
+    border-radius: 8px;
+  }
+  .item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .text{
+      padding: 50px;
+      width: calc(50% - 100px);
+      p{
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 28px;
+        color: $cinza-claro;
+      }
+      a{
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 28px;
+        color: $cinza-escuro;
+      }
+    }
+    .image{
+      width: 50%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-height: 350px;
+      overflow: hidden;
+      > img{
+        width: 100%;
+      }
+      .logo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #b24d1938;
+        width: 100%;
+        height: 100%; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+          max-height: 70px;
+          max-width: 200px;
+        }
+      }
+    }
+  }
+  @include media('xs'){
+    margin-top: 20px;
+    .item{
+      flex-direction: column;
+      .image{
+        width: 100%;
+        height: auto;
+      }
+      .text{
+        padding: 30px;
+        width: calc(100% - 60px);
+      }
+    }
+  }
+}
 .chamada{
   padding: 100px 0;
+  background: $laranja-claro;
   h1{
     font-size: 70px;
     margin-bottom: 30px;
@@ -365,7 +458,7 @@
     background: $laranja-escuro;
     color: $branco;
     border: 1px solid $laranja-escuro;
-    text-transform: uppercase;
+    text-transform: uppercase; 
     font-weight: bold;
     letter-spacing: 1px;
     transition: .3s;
