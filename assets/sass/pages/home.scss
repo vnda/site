@@ -109,9 +109,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    &.swiper-slide-active{
+      .text{
+        left: 0;
+      }
+    }
     .text{
       padding: 50px;
       width: calc(50% - 100px);
+      background: white;
+      position: relative;
+      left: 100%;
+      transition: .5s;
       p{
         font-weight: 400;
         font-size: 17px;
@@ -140,7 +149,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        background: #b24d1938;
+        background: #b24d1987;
         width: 100%;
         height: 100%; 
         display: flex;
@@ -159,18 +168,23 @@
       flex-direction: column;
       .image{
         width: 100%;
-        height: auto;
+        height: 180px;
       }
       .text{
         padding: 30px;
         width: calc(100% - 60px);
       }
     }
+    .swiper-button-next {
+      right: -15px;
+    }  
+    .swiper-button-prev {
+      left: -15px;
+    }
   }
 }
 .chamada{
   padding: 100px 0;
-  background: $laranja-claro;
   h1{
     font-size: 70px;
     margin-bottom: 30px;
@@ -207,11 +221,11 @@
   @include media('xs'){
     padding: 50px 0;
     h1{
-      font-size: 50px;
+      font-size: 30px;
     }
     h2{
       width: 100%;
-      font-size: 25px;
+      font-size: 18px;
     }
   }
 }

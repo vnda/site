@@ -144,7 +144,7 @@ $(document).ready(function(){
         slidesPerView: 1,
         spaceBetween: 0,
         simulateTouch: true,
-        autoHeight: true,
+        effect: 'fade',
         navigation: {
             nextEl: $('.cases-carrossel').find('.swiper-button-next'),
             prevEl: $('.cases-carrossel').find('.swiper-button-prev'),
