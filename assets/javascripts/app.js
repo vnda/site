@@ -48,10 +48,21 @@ $(document).ready(function(){
             $(el).text(palavras[i]);
             i++;
         }, 3000);
-    });
+    });     
+    mixpanel.init("9dd057a151c2e45ac2cdfe78ef57cda8");
+    mixpanel.track("Home");
     $('#form-contato').submit(function(e){
         e.preventDefault();
         var $form = $(this);
+        mixpanel.track(
+            "Formulário",
+            {'Nome': $form.find('input[name=name]').val(),
+            'Email': $form.find('input[name=email]').val(),
+            'Telefone': $form.find('input[name=phone]').val(),
+            'Empresa': $form.find('input[name=empresa]').val(),
+            'Site': $form.find('input[name=site]').val(),
+            'Mensagem': $form.find('input[name=mensagem]').val()}
+        );
         $.ajax({
             url: "https://vnda-73a877.pipedrive.com/v1/organizations?api_token=9fafcfdb813f588d78256ee1d7e105d0735c633c",
             data: 'name=' + $form.find('input[name=empresa]').val(), 
