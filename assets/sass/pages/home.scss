@@ -10,12 +10,12 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 750px;
+    height: 700px;
     z-index: -9;
   }
   @include media('xs'){
     &::before{
-      height: 575px;
+      height: 410px;
     }
   }
 }
@@ -182,6 +182,9 @@
       left: -15px;
     }
   }
+}
+.admin{
+  margin-top: 100px;
 }
 .chamada{
   padding: 100px 0;
@@ -386,6 +389,7 @@
   }
 }
 .recursos{
+  margin-top: -300px;
   .content{
     display: flex;
     align-items: flex-start;
@@ -417,6 +421,7 @@
     }
   }
   @include media('xs'){
+    margin-top: -100px;
     .content{
       .item{
         width: calc(100% - 40px);

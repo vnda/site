@@ -163,4 +163,29 @@ $(document).ready(function(){
             prevEl: $('.cases-carrossel').find('.swiper-button-prev'),
         },
     });
+
+    var windowSel = $(window);
+      // parallax
+      function parallax(selector, speed) {
+        var movement = -(windowSel.scrollTop() * (speed / 10));
+        //console.info(movement);
+        $(selector).css('transform', 'translate3d(0,' + movement + 'px, 0');
+      }
+      // parallax init
+      function parallaxInit(selector) {
+        //if ($(selector).length && window.innerWidth > 1024) {
+          $(selector).each(function (i, el) {
+            var speed = $(el).attr('data-speed');
+            //init function on load
+            parallax($(el), speed);
+            // init function on scroll
+            windowSel.on('scroll', function () {
+              parallax($(el), speed);
+            });
+          });
+        //}
+      }
+      var parallaxItem = '[data-parallax]';
+      console.log(parallaxItem)
+      parallaxInit(parallaxItem);
 });
