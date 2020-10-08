@@ -54,11 +54,11 @@
 .cases .outros-cases { position: relative; margin: 60px 90px; margin-bottom: 0; }
 @media (max-width: 767px) { .cases .outros-cases { margin: 30px 0; } }
 .cases .outros-cases .case { display: flex; align-items: center; justify-content: center; width: auto; height: auto; }
-.cases .outros-cases .case:hover img:first-child { opacity: 1; }
-.cases .outros-cases .case:hover img:last-child { opacity: 0; }
-.cases .outros-cases .case img { max-height: 30px; max-width: 150px; transition: .3s; width: 100%; }
-.cases .outros-cases .case img:first-child { opacity: 0; }
-.cases .outros-cases .case img:last-child { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 1; }
+.cases .outros-cases .case:hover img:first-child { display: block; }
+.cases .outros-cases .case:hover img:last-child { display: none; }
+.cases .outros-cases .case img { max-height: 30px; max-width: 150px; transition: .3s; }
+.cases .outros-cases .case img:first-child { display: none; }
+.cases .outros-cases .case img:last-child { display: block; }
 .cases .outros-cases .swiper-button-prev, .cases .outros-cases .swiper-button-next { width: 40px; height: 40px; background: #fff; display: flex; align-items: center; justify-content: center; border-radius: 50%; margin-top: 0; box-shadow: 0px 3px 6px #00000029; transition: .3s; }
 @media (max-width: 767px) { .cases .outros-cases .swiper-button-prev, .cases .outros-cases .swiper-button-next { width: 30px; height: 30px; } }
 .cases .outros-cases .swiper-button-prev:after, .cases .outros-cases .swiper-button-next:after { font-size: 12px; color: #FF6D00; }
@@ -302,4 +302,3 @@
 .esperamos .text h3 { margin: 0; }
 .esperamos .text .btn { margin-top: 30px; display: inline-block; }
 .esperamos .image .icon { z-index: 0; }
-

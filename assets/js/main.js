@@ -136,6 +136,8 @@ $(document).ready(function(){
     },
   })
 
+  $('[name="phone"]').mask('(00) 00000-0000');
+
   mixpanel.init("9dd057a151c2e45ac2cdfe78ef57cda8");
   mixpanel.track("Home");
   $('#form-contato').submit(function(e){
@@ -250,9 +252,10 @@ $(document).ready(function(){
                   $form.find('button').text('Enviando...');
                 },
                 success: function(result){
+                  console.log('content=' + $('#form-contato').find('textarea[name=mensagem]').val() + ' ' + $('#form-contato').find('input[name=site]').val() + '&deal_id=' + result.data.id)
                   $.ajax({
                     url: "https://vnda.pipedrive.com/v1/notes?api_token=9fafcfdb813f588d78256ee1d7e105d0735c633c",
-                    data: 'content=' + $form.find('textarea[name=mensagem]').val() + ' ' + $form.find('input[name=site]').val() + '&deal_id=' + result.data.id, 
+                    data: 'content=' + $('#form-contato').find('textarea[name=mensagem]').val() + ' ' + $('#form-contato').find('input[name=site]').val() + '&deal_id=' + result.data.id, 
                     type: 'post',
                     beforeSend: function (){
                       $form.find('button').text('Enviando...');
@@ -310,7 +313,7 @@ $(document).ready(function(){
         complete: function(){
           console.log('Complete');
           $form.removeClass('enviando');
-          $form[0].reset();
+          //$form[0].reset();
         }
       });
     }
@@ -333,6 +336,7 @@ $(document).ready(function(){
       setTimeout(function () {
         $('[data-form-phone]').find('.msg-success').removeClass('active')
       }, 3500);
+      $('[data-form-phone]')[0].reset()
     }).fail(function () {
       $('[data-form-phone]').find('.msg-error').addClass('active')
       setTimeout(function () {
