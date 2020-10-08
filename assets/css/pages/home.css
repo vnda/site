@@ -29,14 +29,12 @@
 .cases .cases-principais .case { display: flex; align-items: center; justify-content: flex-start; height: auto; }
 @media (max-width: 767px) { .cases .cases-principais .case { flex-direction: column; } }
 .cases .cases-principais .case.swiper-slide-active .image img { transform: scale(1); }
-.cases .cases-principais .case .image { width: 28%; margin-left: 5%; }
+.cases .cases-principais .case .image { width: 28%; margin-left: 5%; z-index: 9; }
 @media (max-width: 767px) { .cases .cases-principais .case .image { width: 100%; margin-left: 0; display: none; } }
 .cases .cases-principais .case .image img { transform: scale(0.845); transition: 0.8s; transition-delay: 0.3s; border-radius: 15px; }
 @media (max-width: 767px) { .cases .cases-principais .case .image img { border-bottom-right-radius: 0; border-bottom-left-radius: 0; } }
-.cases .cases-principais .case .text { padding: 60px; background: #FFA000; color: #fff; position: absolute; width: 100%; padding-left: calc(35% + 60px); z-index: -9; border-radius: 15px; }
+.cases .cases-principais .case .text { padding: 60px; background: #FFA000; color: #fff; position: absolute; width: 100%; padding-left: calc(35% + 60px); border-radius: 15px; }
 @media (max-width: 767px) { .cases .cases-principais .case .text { position: relative; border-top-left-radius: 0; border-top-right-radius: 0; padding: 30px; height: 100%; } }
-.cases .cases-principais .case .text p { font: 16px/26px "Montserrat", sans-serif; }
-@media (max-width: 767px) { .cases .cases-principais .case .text p { font: 14px/24px "Montserrat", sans-serif; } }
 .cases .cases-principais .case .text img { margin-bottom: 15px; max-width: 100px; }
 .cases .cases-principais .swiper-button-prev, .cases .cases-principais .swiper-button-next { width: 60px; height: 60px; background: #fff; display: flex; align-items: center; justify-content: center; border-radius: 50%; margin-top: 0; box-shadow: 0px 3px 6px #00000029; transition: .3s; }
 @media (max-width: 767px) { .cases .cases-principais .swiper-button-prev, .cases .cases-principais .swiper-button-next { width: 30px; height: 30px; } }
@@ -56,8 +54,11 @@
 .cases .outros-cases { position: relative; margin: 60px 90px; margin-bottom: 0; }
 @media (max-width: 767px) { .cases .outros-cases { margin: 30px 0; } }
 .cases .outros-cases .case { display: flex; align-items: center; justify-content: center; width: auto; height: auto; }
-.cases .outros-cases .case img { max-height: 30px; max-width: 150px; filter: grayscale(100%) brightness(70%) contrast(2); transition: .3s; }
-.cases .outros-cases .case img:hover { filter: none; }
+.cases .outros-cases .case:hover img:first-child { opacity: 1; }
+.cases .outros-cases .case:hover img:last-child { opacity: 0; }
+.cases .outros-cases .case img { max-height: 30px; max-width: 150px; transition: .3s; width: 100%; }
+.cases .outros-cases .case img:first-child { opacity: 0; }
+.cases .outros-cases .case img:last-child { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 1; }
 .cases .outros-cases .swiper-button-prev, .cases .outros-cases .swiper-button-next { width: 40px; height: 40px; background: #fff; display: flex; align-items: center; justify-content: center; border-radius: 50%; margin-top: 0; box-shadow: 0px 3px 6px #00000029; transition: .3s; }
 @media (max-width: 767px) { .cases .outros-cases .swiper-button-prev, .cases .outros-cases .swiper-button-next { width: 30px; height: 30px; } }
 .cases .outros-cases .swiper-button-prev:after, .cases .outros-cases .swiper-button-next:after { font-size: 12px; color: #FF6D00; }
@@ -84,17 +85,18 @@
 .por-que .text .tab h5 { cursor: pointer; }
 .por-que .text .tab p { display: none; margin-top: 15px; }
 
+.atributos { margin-bottom: 90px; }
 .atributos h3 { margin-bottom: 15px; text-align: center; }
-.atributos .container > p { max-width: 575px; margin: 0 auto; margin-bottom: 30px; text-align: center; }
-.atributos .content { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; margin: -25px; }
+.atributos .container > p { max-width: 625px; margin: 0 auto; margin-bottom: 60px; text-align: center; font: 16px/26px "Montserrat", sans-serif; }
+.atributos .content { display: flex; align-items: flex-start; justify-content: center; flex-wrap: wrap; margin: -25px; }
 @media (max-width: 767px) { .atributos .content { margin: 0px; } }
-.atributos .content .atributo { width: 33.33%; text-align: center; padding: 25px; }
+.atributos .content .atributo { width: 33.33%; text-align: center; padding: 30px; margin-bottom: 30px; }
 @media (max-width: 767px) { .atributos .content .atributo { width: 100%; padding: 15px 0; } }
 .atributos .content .atributo .icon { width: 67px; height: 67px; margin-bottom: 15px; }
 .atributos .content .atributo h5 { margin-bottom: 15px; }
 .atributos .content .atributo p { max-width: 425px; font: 16px/26px "Montserrat", sans-serif; }
 @media (max-width: 767px) { .atributos .content .atributo p { font: 14px/24px "Montserrat", sans-serif; } }
-.atributos .btn { margin: 0 auto; margin-top: 60px; display: block; width: max-content; }
+.atributos .btn { margin: 0 auto; margin-top: 30px; display: block; width: max-content; }
 @media (max-width: 767px) { .atributos .btn { margin-top: 15px; } }
 
 .depoimentos { margin: 0 90px; overflow: hidden; }
@@ -155,7 +157,7 @@
 @media (max-width: 767px) { .plataforma-aberta .container .text p { font: 14px/24px "Montserrat", sans-serif; } }
 .plataforma-aberta .container .text .info { display: flex; align-items: flex-start; justify-content: flex-start; margin-top: 15px; }
 .plataforma-aberta .container .text .info svg { margin-right: 15px; width: 15px; }
-.plataforma-aberta .container .text .info p { width: calc(100% - 30px); font: 13px/23px "Montserrat", sans-serif; }
+.plataforma-aberta .container .text .info p { width: calc(100% - 30px); font: 15px/25px "Montserrat", sans-serif; }
 
 .contact h3 { margin-bottom: 45px; text-align: center; color: #FF6D00; }
 .contact .container { display: flex; align-items: flex-start; justify-content: space-between; }
@@ -176,7 +178,8 @@
 .contact form p.active { display: block; }
 .contact form .field { position: relative; margin-bottom: 20px; width: 100%; }
 @media (max-width: 767px) { .contact form .field { margin-bottom: 10px; } }
-.contact form label { position: absolute; top: 50%; left: 15px; font: italic 14px/19px "Montserrat", sans-serif; color: #263238; transition: .3s; background: #fff; padding: 0 5px; z-index: -9; transform: translateY(-50%); }
+.contact form label { position: absolute; top: 50%; left: 15px; font: italic 14px/19px "Montserrat", sans-serif; color: #263238; transition: .3s; background: #fff; padding: 0 5px; z-index: -9; transform: translateY(-50%); display: flex; }
+.contact form label .req { color: #FF6D00; }
 @media (max-width: 767px) { .contact form label { font: italic 12px/19px "Montserrat", sans-serif; left: 10px; } }
 .contact form textarea + label { top: 25px; }
 .contact .left { position: relative; }
@@ -189,22 +192,22 @@
 @media (max-width: 767px) { .page-plataforma .banner-principal .right { width: 100%; } }
 .page-plataforma .banner-principal .contact { margin-top: 30px; }
 
-.conteudo-pataforma > h3, .conteudo-talentos > h3, .esperamos > h3 { margin-bottom: 15px; text-align: center; }
-.conteudo-pataforma > p, .conteudo-talentos > p, .esperamos > p { max-width: 650px; margin: 0 auto; margin-bottom: 30px; text-align: center; }
-.conteudo-pataforma:nth-child(odd) .container, .conteudo-talentos:nth-child(odd) .container, .esperamos:nth-child(odd) .container { flex-direction: row-reverse; }
-@media (max-width: 767px) { .conteudo-pataforma:nth-child(odd) .container, .conteudo-talentos:nth-child(odd) .container, .esperamos:nth-child(odd) .container { flex-direction: column; } }
-.conteudo-pataforma .container, .conteudo-talentos .container, .esperamos .container { display: flex; justify-content: space-between; align-items: center; }
-@media (max-width: 767px) { .conteudo-pataforma .container, .conteudo-talentos .container, .esperamos .container { flex-direction: column; } }
-.conteudo-pataforma .text, .conteudo-talentos .text, .esperamos .text { width: 45%; }
-@media (max-width: 767px) { .conteudo-pataforma .text, .conteudo-talentos .text, .esperamos .text { width: 100%; } }
-.conteudo-pataforma .text h3, .conteudo-pataforma .text h4, .conteudo-talentos .text h3, .conteudo-talentos .text h4, .esperamos .text h3, .esperamos .text h4 { margin: 15px 0px; }
-.conteudo-pataforma .text p, .conteudo-talentos .text p, .esperamos .text p { font: 18px/28px "Montserrat", sans-serif; }
-@media (max-width: 767px) { .conteudo-pataforma .text p, .conteudo-talentos .text p, .esperamos .text p { font: 14px/24px "Montserrat", sans-serif; } }
-.conteudo-pataforma .text strong, .conteudo-talentos .text strong, .esperamos .text strong { color: #FF6D00; }
-.conteudo-pataforma .image, .conteudo-talentos .image, .esperamos .image { position: relative; width: calc(47% - 90px); display: flex; align-items: center; justify-content: center; height: 0; padding-bottom: calc(37% - 90px); }
-@media (max-width: 767px) { .conteudo-pataforma .image, .conteudo-talentos .image, .esperamos .image { width: 100%; padding-bottom: calc(100% - 90px); } }
-.conteudo-pataforma .image .icon, .conteudo-talentos .image .icon, .esperamos .image .icon { position: absolute; width: 100%; height: 100%; z-index: -9; fill: #FF6D00; top: 0; left: 0; }
-.conteudo-pataforma .image img, .conteudo-talentos .image img, .esperamos .image img { width: 95%; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: #fff; border-top: 5px solid #FF6D00; }
+.conteudo-plataforma > h3, .conteudo-talentos > h3, .esperamos > h3 { margin-bottom: 15px; text-align: center; }
+.conteudo-plataforma > p, .conteudo-talentos > p, .esperamos > p { max-width: 650px; margin: 0 auto; margin-bottom: 30px; text-align: center; font: 16px/26px "Montserrat", sans-serif; }
+.conteudo-plataforma:nth-child(odd) .container, .conteudo-talentos:nth-child(odd) .container, .esperamos:nth-child(odd) .container { flex-direction: row-reverse; }
+@media (max-width: 767px) { .conteudo-plataforma:nth-child(odd) .container, .conteudo-talentos:nth-child(odd) .container, .esperamos:nth-child(odd) .container { flex-direction: column; } }
+.conteudo-plataforma .container, .conteudo-talentos .container, .esperamos .container { display: flex; justify-content: space-between; align-items: center; }
+@media (max-width: 767px) { .conteudo-plataforma .container, .conteudo-talentos .container, .esperamos .container { flex-direction: column; } }
+.conteudo-plataforma .text, .conteudo-talentos .text, .esperamos .text { width: 45%; }
+@media (max-width: 767px) { .conteudo-plataforma .text, .conteudo-talentos .text, .esperamos .text { width: 100%; } }
+.conteudo-plataforma .text h3, .conteudo-plataforma .text h4, .conteudo-talentos .text h3, .conteudo-talentos .text h4, .esperamos .text h3, .esperamos .text h4 { margin: 15px 0px; }
+.conteudo-plataforma .text p, .conteudo-talentos .text p, .esperamos .text p { font: 18px/28px "Montserrat", sans-serif; }
+@media (max-width: 767px) { .conteudo-plataforma .text p, .conteudo-talentos .text p, .esperamos .text p { font: 14px/24px "Montserrat", sans-serif; } }
+.conteudo-plataforma .text strong, .conteudo-talentos .text strong, .esperamos .text strong { color: #FF6D00; }
+.conteudo-plataforma .image, .conteudo-talentos .image, .esperamos .image { position: relative; width: calc(47% - 90px); display: flex; align-items: center; justify-content: center; height: 0; padding-bottom: calc(37% - 90px); }
+@media (max-width: 767px) { .conteudo-plataforma .image, .conteudo-talentos .image, .esperamos .image { width: 100%; padding-bottom: calc(100% - 90px); } }
+.conteudo-plataforma .image .icon, .conteudo-talentos .image .icon, .esperamos .image .icon { position: absolute; width: 100%; height: 100%; z-index: -9; fill: #FF6D00; top: 0; left: 0; }
+.conteudo-plataforma .image img, .conteudo-talentos .image img, .esperamos .image img { width: 95%; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: #fff; border-top: 5px solid #FF6D00; }
 
 .melhor-uso h3 { text-align: center; margin-bottom: 30px; color: #FF6D00; }
 .melhor-uso .content { display: flex; justify-content: space-evenly; margin: -15px; }
@@ -250,7 +253,7 @@
 .oportunidades .container .items .item a:hover { color: #FFA000; }
 
 .motivacao { background: #E9EBED; padding-bottom: 175px; }
-.motivacao h3 { text-align: center; margin-bottom: 60px; }
+.motivacao h3 { text-align: center; margin-bottom: 60px; color: #FF6D00; }
 @media (max-width: 767px) { .motivacao h3 { margin-bottom: 30px; } }
 .motivacao .content { margin: -15px; display: flex; align-items: flex-start; }
 @media (max-width: 767px) { .motivacao .content { flex-direction: column; } }
@@ -299,3 +302,4 @@
 .esperamos .text h3 { margin: 0; }
 .esperamos .text .btn { margin-top: 30px; display: inline-block; }
 .esperamos .image .icon { z-index: 0; }
+

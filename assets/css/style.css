@@ -1,9 +1,12 @@
-footer { background: #263238; padding-top: 45px; padding-bottom: 30px; color: #fff; margin: 30px; border-radius: 15px; }
+footer { background: #263238; padding-top: 60px; padding-bottom: 60px; color: #fff; margin: 30px; border-radius: 15px; }
 @media (max-width: 767px) { footer { margin: 15px; } }
-footer .newsletter { max-width: 700px; text-align: center; margin: 0 auto; padding-bottom: 30px; }
-footer .newsletter h4 { margin-bottom: 15px; }
-footer .newsletter p { margin-bottom: 30px; }
-footer .newsletter form { border-radius: 34px; overflow: hidden; display: flex; margin-right: 30px; box-shadow: 0px 3px 6px #00000029; background: #fff; width: 65%; margin: 0 auto; }
+footer .newsletter { text-align: center; margin: 0 auto; padding-bottom: 60px; display: flex; text-align: left; flex-wrap: wrap; align-items: center; justify-content: space-between; }
+footer .newsletter .left { width: 50%; }
+@media (max-width: 767px) { footer .newsletter .left { margin-bottom: 30px; width: 100%; } }
+footer .newsletter .right { width: 35%; text-align: center; padding-top: 120px; }
+@media (max-width: 767px) { footer .newsletter .right { width: 100%; padding-top: 0; } }
+footer .newsletter p { margin-bottom: 15px; }
+footer .newsletter form { border-radius: 34px; overflow: hidden; display: flex; margin-right: 30px; box-shadow: 0px 3px 6px #00000029; background: #fff; width: 100%; margin: 0 auto; }
 @media (max-width: 767px) { footer .newsletter form { width: 100%; } }
 footer .newsletter form.mimi_submitting { background: #263238; box-shadow: 0px 3px 6px transparent; }
 footer .newsletter form.mimi_submitting .mimi_field { flex-direction: column; }
@@ -16,7 +19,7 @@ footer .newsletter form input[type="text"] { font: italic 14px/24px "Montserrat"
 footer .newsletter form .btn, footer .newsletter form .disabled { font: 600 12px/22px "Montserrat", sans-serif; letter-spacing: 0.8px; padding: 10px 15px; background: #FF6D00; border-radius: 24px; border: 1px solid #B5B5B5; border-color: #FF6D00; color: #fff; transition: .3s; cursor: pointer; min-width: 120px; transform: scale(1.05); border-top-left-radius: 0px; border-bottom-left-radius: 0px; background: #FFA000; }
 footer .newsletter form .btn:hover, footer .newsletter form .disabled:hover { background: #FFA000; border-color: #FFA000; }
 footer .newsletter form .btn:hover, footer .newsletter form .disabled:hover { background: #FF6D00; }
-footer .top { display: flex; align-items: flex-start; justify-content: space-between; padding-bottom: 30px; border-bottom: 1px solid #B5B5B5; border-top: 1px solid #B5B5B5; border-color: #fff; padding-top: 30px; }
+footer .top { display: flex; align-items: flex-start; justify-content: space-between; padding-bottom: 60px; border-bottom: 1px solid #B5B5B5; border-top: 1px solid #B5B5B5; border-color: #fff; padding-top: 60px; }
 @media (max-width: 767px) { footer .top { flex-direction: column; align-items: center; text-align: center; } }
 footer .top .column { flex: 1; }
 footer .top .column:first-child { flex: 3; }
@@ -32,11 +35,11 @@ footer .top .column .menu a .tooltip { font: 12px/16px "Montserrat", sans-serif;
 @media (max-width: 767px) { footer .top .column .menu a .tooltip { display: none; } }
 footer .top .column .menu a .tooltip:after { content: ''; border: 5px solid #FFA000; position: absolute; border-right-color: transparent; border-bottom-color: transparent; position: absolute; top: calc(100% - 5px); transform: rotate(-135deg); left: 20px; }
 footer .top .column .social { display: flex; align-items: center; justify-content: space-between; margin-top: 15px; }
-footer .top .column .social .icon { margin-right: 30px; transition: .3s; fill: #fff; width: 30px; height: 30px; }
+footer .top .column .social .icon { margin-right: 30px; transition: .3s; fill: #FFA000; width: 30px; height: 30px; }
 @media (max-width: 767px) { footer .top .column .social .icon { margin: 0 15px; } }
-footer .top .column .social .icon:hover { fill: #FFA000; transform: scale(1.2); }
+footer .top .column .social .icon:hover { fill: #FF6D00; transform: scale(1.2); }
 footer .top .column p { font: 300 14px/24px "Montserrat", sans-serif; }
-footer .center { display: flex; align-items: center; justify-content: flex-start; padding-top: 30px; }
+footer .center { display: flex; align-items: center; justify-content: flex-start; padding-top: 60px; }
 footer .center .seal h4 { font: 16px/26px "Montserrat", sans-serif; }
 @media (max-width: 767px) { footer .center .seal h4 { text-align: center; } }
 footer .center .seal .content { padding-top: 26px; padding-bottom: 26px; margin: -5px; display: flex; align-items: center; justify-content: center; }

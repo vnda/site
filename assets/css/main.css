@@ -110,6 +110,7 @@ template { display: none; }
 .container { padding-right: 5%; padding-left: 5%; margin-right: auto; margin-left: auto; width: 100%; max-width: 1553px; }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
+*:focus { outline: 0; }
 
 body { font-family: "Montserrat", sans-serif; color: #263238; }
 body main { min-height: 70vh; }
