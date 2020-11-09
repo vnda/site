@@ -345,44 +345,54 @@ $(document).ready(function(){
     });
   })
   
-  $(document).ready(function() {
-    if($('body').hasClass('page-home')){
-      var steamGrp = [steamLeft, steamRight, steamMid],
-        steamLeft = $('svg #steam-left'),
-        steamRight = $('#steam-right'),
-        steamMid = $('#steam-mid'),
-        svg = $('svg'),
-        rotate = new TimelineMax({paused:false, repeat: -1}),
-        pulse = new TimelineMax({paused:false, repeat: -1, yoyo:true}),
-        rise = new TimelineMax({paused:false, repeat: -1});
 
-      rotate.to([steamLeft, steamRight, steamMid], 2, {rotationY:"+=360deg", transformOrigin:"50% 50%", ease: Linear.easeOut});
-      
-      pulse.set([steamLeft, steamRight, steamMid], {opacity: "0", ease: Linear.easeInOut}).to([steamLeft, steamRight, steamMid], 1.5, {opacity: ".75", ease: Linear.easeInOut});
-      
-      rise.staggerTo([steamMid, steamLeft, steamRight], 2, {y: "-=50px", ease: Linear.easeOut}, .5);
+  if($('body').hasClass('page-home')){
+    var steamGrp = [steamLeft, steamRight, steamMid],
+      steamLeft = $('svg #steam-left'),
+      steamRight = $('#steam-right'),
+      steamMid = $('#steam-mid'),
+      svg = $('svg'),
+      rotate = new TimelineMax({paused:false, repeat: -1}),
+      pulse = new TimelineMax({paused:false, repeat: -1, yoyo:true}),
+      rise = new TimelineMax({paused:false, repeat: -1});
 
-      var hash_url = document.location.hash;
-      console.log('oie')
-      if (hash_url != '') {
-        var scr = $(hash_url).offset().top - 50;    
-        $('html').animate({
-          scrollTop: scr
-        }, 1000);
-      }
+    rotate.to([steamLeft, steamRight, steamMid], 2, {rotationY:"+=360deg", transformOrigin:"50% 50%", ease: Linear.easeOut});
+    
+    pulse.set([steamLeft, steamRight, steamMid], {opacity: "0", ease: Linear.easeInOut}).to([steamLeft, steamRight, steamMid], 1.5, {opacity: ".75", ease: Linear.easeInOut});
+    
+    rise.staggerTo([steamMid, steamLeft, steamRight], 2, {y: "-=50px", ease: Linear.easeOut}, .5);
+
+    var hash_url = document.location.hash;
+    console.log('oie')
+    if (hash_url != '') {
+      var scr = $(hash_url).offset().top - 50;    
+      $('html').animate({
+        scrollTop: scr
+      }, 1000);
     }
+  }
 
-    $('.page-home a[href*="#"]').on('click', function(){
-      var hash_url = '#' + $(this).attr('href').split('#')[1];
+  $('.page-home a[href*="#"]').on('click', function(){
+    var hash_url = '#' + $(this).attr('href').split('#')[1];
 
-      console.log('oie')
-      if (hash_url != '') {
-        var scr = $(hash_url).offset().top - 50;    
-        $('html').animate({
-          scrollTop: scr
-        }, 1000);
-      }
-    })
-  });
+    console.log('oie')
+    if (hash_url != '') {
+      var scr = $(hash_url).offset().top - 50;    
+      $('html').animate({
+        scrollTop: scr
+      }, 1000);
+    }
+  })
+
+  $('.question h6').on('click', function(){
+    if ($(this).closest('.question').find('.text').height() == 0){
+      $(this).closest('.question').find('.text').height($(this).closest('.question').find('.text').find('div').height())
+      $(this).addClass('open')
+    } else{
+      $(this).closest('.question').find('.text').height(0)
+      $(this).removeClass('open')
+    }
+  })
+
 })
 

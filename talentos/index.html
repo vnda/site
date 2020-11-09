@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Talentos | Vnda - Tecnologia em e-Commerce.</title>
+    <title>Talentos | Vnda - Tecnologia em E-commerce.</title>
     <meta name="description" content="Acreditamos em relações que vão além das transações.">
-    <meta name="keywords" content="varejo, e-Commerce, plataforma">
-    <meta name="author" content="Vnda - Tecnologia em e-Commerce.">
+    <meta name="keywords" content="varejo, E-commerce, plataforma">
+    <meta name="author" content="Vnda - Tecnologia em E-commerce.">
   
     <link rel="stylesheet" href="/assets/css/swiper.min.css">
     <link rel="stylesheet" href="/assets/css/mmenu.min.css">
@@ -36,6 +36,7 @@
   
     <script src="/assets/js/jquery-3.5.1.min.js"></script>
     <script src="/assets/js/swiper.min.js"></script>
+    <script src="/assets/js/jquery.mask.js"></script>
     <script src="/assets/js/TimelineMax.min.js"></script>
     <script src="/assets/js/TweenMax.min.js"></script>
     <script src="/assets/js/mmenu.min.js"></script>
@@ -66,7 +67,6 @@
     MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);</script><!-- end Mixpanel -->
     <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/8af708ccc5da83ee7d4d8c1c3/5c43d7ba6bd9e931dc5838be1.js");</script>
   </head>
-  
   <body>
     <header>
       <div class="container">
@@ -94,14 +94,14 @@
             <a href="https://www.vnda.com.br/talentos">Talentos</a>
           </li>
           <li>
-            <a href="https://vnda.medium.com/ target="_blank"">Blog</a>
+            <a href="https://vnda.medium.com/" target="_blank">Blog</a>
           </li>
           <li>
             <a href="https://www.vnda.com.br/#contato">Contato</a>
           </li>
         </ul>
         <a href="" class="btn start-ecommerce">
-          Iniciar e-Commerce
+          Iniciar E-commerce
         </a>
       </div>
     </header>
@@ -215,20 +215,6 @@
                 <div class="swiper-slide">
                   <div class="time">
                     <div class="text">
-                      <p><span class="aspas-inicio">"</span>Trabalhar na Vnda tem sido um aprendizado diário e gratificante, onde me sinto feliz em fazer parte desse crescimento constante que a empresa vive e principalmente de estar me desenvolvendo em uma área que vive uma expansão incrível. O clima é ótimo para trabalhar e descontraído.<span class="aspas-final">"</span></p>
-                      <div class="person">                      
-                        <img src="/assets/images/time/gui.jpg" alt="">
-                        <div class="info">
-                          <h5>Guilherme Pahl</h5>
-                          <p>Project Owner</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="time">
-                    <div class="text">
                       <p><span class="aspas-inicio">"</span>Na Vnda, desenvolvi minha capacidade de liderança e de propor soluções de maneira objetiva, aprendendo muito além da minha atuação em Customer Success. Me sinto realizada de fazer parte de uma empresa em constante crescimento e que contribui diretamente no sucesso de marcas que admiro!<span class="aspas-final">"</span></p>
                       <div class="person">                      
                         <img src="/assets/images/time/luiza.jpg" alt="">
@@ -307,21 +293,25 @@
     <footer>
       <div class="container">
         <div class="newsletter">
-          <h4>Conteúdos que gostamos de compartilhar</h4>
-          <p>Aqui você acompanha o varejo de hoje e se prepara para o varejo de amanhã.</p>
-          <form id="ema_signup_form" target="_blank" action="https://madmimi.com/signups/subscribe/0c4ff025fced46d8aa99644fd4cf8c88" accept-charset="UTF-8" method="post">
-            <input name="utf8" type="hidden" value="✓"/>
-            <div class="mimi_field required">
-               <input id="signup_email" name="signup[email]" type="text" data-required-field="Este campo é obrigatório" placeholder="voce@exemplo.com"/>
-            </div>
-            <div style="display: none;">
-               <input type="text" name="08b78784a11fef09e082f40f7013482a" />
-               <input class="checkbox" type="checkbox" name="beacon"/>
-            </div>
-            <div class="mimi_field">
-               <input type="submit" class="submit btn" value="Inscrever-se" id="webform_submit_button" data-default-text="Inscrever-se" data-submitting-text="Enviando..." data-invalid-text="↑ Você se esqueceu de alguns campos obrigatórios" data-choose-list="↑ Escolha uma lista" data-thanks="Obrigado!"/>
-            </div>
-          </form>
+          <div class="left">
+            <h4>Acompanhe o varejo de hoje e prepare-se para o varejo de amanhã</h4>
+          </div>
+          <div class="right">
+            <p>Receba os conteúdos que gostamos de compartilhar</p>
+            <form id="ema_signup_form" target="_blank" action="https://madmimi.com/signups/subscribe/0c4ff025fced46d8aa99644fd4cf8c88" accept-charset="UTF-8" method="post">
+              <input name="utf8" type="hidden" value="✓"/>
+              <div class="mimi_field required">
+                <input id="signup_email" name="signup[email]" type="text" data-required-field="Este campo é obrigatório" placeholder="voce@exemplo.com"/>
+              </div>
+              <div style="display: none;">
+                <input type="text" name="08b78784a11fef09e082f40f7013482a" />
+                <input class="checkbox" type="checkbox" name="beacon"/>
+              </div>
+              <div class="mimi_field">
+                <input type="submit" class="submit btn" value="Inscrever-se" id="webform_submit_button" data-default-text="Inscrever-se" data-submitting-text="Enviando..." data-invalid-text="↑ Você se esqueceu de alguns campos obrigatórios" data-choose-list="↑ Escolha uma lista" data-thanks="Obrigado!"/>
+              </div>
+            </form>
+          </div>
           <script type="text/javascript">
           (function(global) {
           function serialize(form){if(!form||form.nodeName!=="FORM"){return }var i,j,q=[];for(i=form.elements.length-1;i>=0;i=i-1){if(form.elements[i].name===""){continue}switch(form.elements[i].nodeName){case"INPUT":switch(form.elements[i].type){case"text":case"hidden":case"password":case"button":case"reset":case"submit":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break;case"checkbox":case"radio":if(form.elements[i].checked){q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value))}break;case"file":break}break;case"TEXTAREA":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break;case"SELECT":switch(form.elements[i].type){case"select-one":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break;case"select-multiple":for(j=form.elements[i].options.length-1;j>=0;j=j-1){if(form.elements[i].options[j].selected){q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].options[j].value))}}break}break;case"BUTTON":switch(form.elements[i].type){case"reset":case"submit":case"button":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break}break}}return q.join("&")};
@@ -659,7 +649,7 @@
           })(this);
           </script>
         
-        </div>     
+        </div>    
         <div class="top">
           <div class="column">
             <div class="logo">
@@ -667,7 +657,7 @@
                 <img src="/assets/images/logo-branco.svg" alt="">
               </a>
             </div>
-            <p>Tecnologia em e-Commerce</p>
+            <p>Tecnologia em E-commerce</p>
             <p>CNPJ: 12.803.527/0001-33</p>
             <ul class="social">
               <li>
@@ -749,12 +739,11 @@
         </div>
         <div class="bottom">
           <div class="copy">
-            <a href="">© 2020, Vnda - Tecnologia em e-Commerce.</a>
+            <a href="">© 2020, Vnda - Tecnologia em E-commerce.</a>
           </div>
         </div>
       </div>
-    </footer> 
-    
+    </footer>     
     <nav id="menu-mobile">
       <ul class="menu mobile">
         <li>
@@ -770,7 +759,7 @@
           <a href="https://www.vnda.com.br/talentos">Talentos</a>
         </li>
         <li>
-          <a href="https://vnda.medium.com/ target="_blank"">Blog</a>
+          <a href="https://vnda.medium.com/" target="_blank">Blog</a>
         </li>
         <li>
           <a href="https://www.vnda.com.br/#contato">Contato</a>
@@ -854,18 +843,25 @@
         </symbol>
         <symbol id="icon-ativacao" viewBox="0 0 128 128">
           <style type="text/css">
-            .st0{fill:#FFA000;}
-            .st1{fill:#8EF9F3;}
+            .st0{fill:#8EF9F3;}
+            .st1{fill:#FFA000;}
             .st2{fill:none;stroke:#263238;stroke-width:4;stroke-miterlimit:10;}
+            .st3{fill:none;stroke:#263238;stroke-width:4;stroke-miterlimit:10;stroke-dasharray:6,6;}
           </style>
           <g>
-            <circle class="st0" cx="91" cy="77" r="23"/>
-            <circle class="st1" cx="83" cy="46" r="17"/>
-            <path class="st2" d="M52.8,100.7c0,0,38.2-18.4,53-37.5s13.4-53,13.4-53s-33.9-1.4-53,13.4s-37.5,53-37.5,53L52.8,100.7z"/>
-            <circle class="st2" cx="83" cy="46" r="17"/>
-            <path class="st2" d="M49.2,42.1c-16.2,0-28.9,9.6-35.4,24.4L9.6,76H31"/>
-            <path class="st2" d="M87.9,78.8c0,16.2-9.6,30.8-24.4,37.3l-9.5,4.2V99"/>
-            <line class="st2" x1="65.5" y1="64" x2="30.8" y2="98.6"/>
+            <path class="st0" d="M109.5,7L109.5,7c3.6,0,6.5,2.9,6.5,6.5v93c0,3.6-2.9,6.5-6.5,6.5l0,0c-3.6,0-6.5-2.9-6.5-6.5v-93
+              C103,9.9,105.9,7,109.5,7z"/>
+            <polygon class="st1" points="102.5,32.8 61.2,60.1 102,88.1 	"/>
+            <g>
+              <line class="st2" x1="103" y1="17.9" x2="21.5" y2="49.6"/>
+              <line class="st2" x1="21.5" y1="70.4" x2="103" y2="102.1"/>
+            </g>
+            <path class="st2" d="M15.5,45L15.5,45c3.6,0,6.5,2.9,6.5,6.5v18c0,3.6-2.9,6.5-6.5,6.5l0,0C11.9,76,9,73.1,9,69.5v-18
+              C9,47.9,11.9,45,15.5,45z"/>
+            <path class="st2" d="M109.5,7L109.5,7c3.6,0,6.5,2.9,6.5,6.5v93c0,3.6-2.9,6.5-6.5,6.5l0,0c-3.6,0-6.5-2.9-6.5-6.5v-93
+              C103,9.9,105.9,7,109.5,7z"/>
+            <line class="st3" x1="46" y1="60" x2="79" y2="60"/>
+            <path class="st2" d="M29,78v42h18v-0.2c0-4.3-4.8-4.3-4.8-8.6s4.8-4.3,4.8-8.6s-4.8-4.3-4.8-8.6s4.8-4.3,4.8-8.7"/>
           </g>
         </symbol>
         <symbol id="icon-entregas" viewBox="0 0 128 128">
@@ -955,6 +951,74 @@
               c-1.9,49.8,32.9,48.9,32.9,48.9s25.5,0.9,27.7-22.6C154.3,73.8,140.4,69.4,126.3,70.2z M147.9,95.4c-1.9,20.1-17.9,20-21.9,20
               s-31.6-0.8-30-43.3c1.6-42.5,49.3-58.6,49.3-58.6c-0.4,10.6-0.6,12.8-0.6,12.8s-9.3,2.5-19.8,11.6c-16.2,14.1-16.8,37.6-1.9,36.8
               C135.1,74,149.7,75.1,147.9,95.4z"/>
+          </g>
+        </symbol>
+        <symbol id="plan-starter" viewBox="0 0 128 128">
+          <style type="text/css">
+            .st0{fill:#8EF9F3;}
+            .st1{fill:#FFA000;}
+            .st2{fill:none;stroke:#263238;stroke-width:4;stroke-miterlimit:10;}
+            .st3{fill:#263238;}
+          </style>
+          <g>
+            <path class="st0" d="M113.4,77.8c1.2-4.6,8.3-8.5,8.3-13.4s-7.1-8.9-8.3-13.4c-1.3-4.7,2.9-11.7,0.5-15.8s-10.5-4.1-13.9-7.5
+              s-3.3-11.5-7.5-13.9s-11.1,1.8-15.8,0.5C72.2,13.1,68.2,6,63.3,6s-8.9,7.1-13.4,8.3c-4.7,1.3-11.7-2.9-15.8-0.5s-4.1,10.5-7.5,13.9
+              S15.2,31,12.8,35.2s1.7,11.1,0.5,15.8c-1.2,4.5-8.3,8.4-8.3,13.4s7.1,8.9,8.3,13.4s-2.9,11.7-0.5,15.8s10.5,4.1,13.9,7.4
+              s3.3,11.5,7.4,13.9s11.1-1.7,15.8-0.5c4.5,1.2,8.5,8.3,13.4,8.3s8.9-7.1,13.4-8.3c4.7-1.3,11.7,2.9,15.8,0.5s4.1-10.5,7.5-13.9
+              s11.5-3.3,13.9-7.4S112.1,82.5,113.4,77.8z M63.3,104.7c-22.3,0-40.3-18-40.3-40.3s18-40.3,40.3-40.3s40.3,18,40.3,40.3
+              c0,0,0,0,0,0C103.6,86.6,85.6,104.7,63.3,104.7z"/>
+            <polygon class="st1" points="38,85 87.4,84.9 68.7,39.1 	"/>
+            <path class="st2" d="M121.7,64.4c0,4.9-7.1,8.9-8.3,13.4c-1.3,4.7,2.9,11.7,0.5,15.8s-10.5,4.1-13.9,7.4s-3.3,11.5-7.5,13.9
+              s-11.1-1.7-15.8-0.5c-4.6,1.2-8.5,8.3-13.4,8.3s-8.9-7.1-13.4-8.3c-4.7-1.3-11.7,2.9-15.8,0.5s-4.1-10.5-7.5-13.9
+              s-11.5-3.3-13.9-7.4s1.7-11.1,0.5-15.8s-8.3-8.5-8.3-13.4S12,55.5,13.2,51c1.3-4.7-2.9-11.7-0.5-15.8s10.5-4.1,13.9-7.5
+              s3.3-11.5,7.4-13.9s11.1,1.8,15.8,0.5C54.4,13.1,58.4,6,63.3,6s8.9,7.1,13.4,8.3c4.7,1.3,11.7-2.9,15.8-0.5s4.1,10.5,7.5,13.9
+              s11.5,3.3,13.9,7.5s-1.8,11.1-0.5,15.8C114.6,55.5,121.7,59.4,121.7,64.4z"/>
+            <circle class="st2" cx="63.3" cy="64.4" r="40.3"/>
+            <g>
+              <path class="st3" d="M44.8,55.4h3.4v18h-2.1l-9.4-12.1v12.1h-3.4v-18H36l8.8,11.1L44.8,55.4z"/>
+              <path class="st3" d="M64.7,73.3H51.2V55.4h13.4v3.3H54.6v4.1h9.7V66h-9.7v4h10.1V73.3z"/>
+              <path class="st3" d="M86.9,73.3h-2.9l-2.2-5.6L79.9,62L78,67.7l-2.2,5.6H73l-6.6-17.9h3.8l4.2,12.9l4.4-12.9H81l4.5,12.9l4.1-12.9
+                h3.8L86.9,73.3z"/>
+            </g>
+          </g>
+        </symbol>
+        <symbol id="plan-scale" viewBox="0 0 128 128">
+          <style type="text/css">
+            .st0{fill:#FFA000;}
+            .st1{fill:#8EF9F3;}
+            .st2{fill:none;stroke:#263238;stroke-width:4;stroke-miterlimit:10;}
+          </style>
+          <g>
+            <circle class="st0" cx="91" cy="77" r="23"/>
+            <circle class="st1" cx="83" cy="46" r="17"/>
+            <path class="st2" d="M52.8,100.7c0,0,38.2-18.4,53-37.5s13.4-53,13.4-53s-33.9-1.4-53,13.4s-37.5,53-37.5,53L52.8,100.7z"/>
+            <circle class="st2" cx="83" cy="46" r="17"/>
+            <path class="st2" d="M49.2,42.1c-16.2,0-28.9,9.6-35.4,24.4L9.6,76H31"/>
+            <path class="st2" d="M87.9,78.8c0,16.2-9.6,30.8-24.4,37.3l-9.5,4.2V99"/>
+            <line class="st2" x1="65.5" y1="64" x2="30.8" y2="98.6"/>
+          </g>
+        </symbol>
+        <symbol id="plan-enterprise" viewBox="0 0 128 128">
+          <style type="text/css">
+            .st0{fill:#FFA000;}
+            .st1{fill:#8EF9F3;}
+            .st2{fill:none;stroke:#263238;stroke-width:4;stroke-miterlimit:10;}
+          </style>
+          <g>
+            <circle class="st0" cx="101" cy="51" r="23"/>
+            <path class="st1" d="M48,90.1C53,94,58.5,95,64.4,95c5.6,0,10.8-2.3,15.6-4.5V85c0-8.8-7.2-16-16-16l0,0c-8.8,0-16,7.2-16,16V90.1
+              L48,90.1z"/>
+            <g>
+              <circle class="st2" cx="64" cy="58" r="11"/>
+              <path class="st2" d="M80,90v-5c0-8.8-7.2-16-16-16l0,0c-8.8,0-16,7.2-16,16v6"/>
+            </g>
+            <g>
+              <circle class="st2" cx="63.5" cy="64.5" r="31.5"/>
+              <path class="st2" d="M121,72.9V55.1l-13-3.7c-1-3.3-2.3-6.5-4-9.6l6.6-11.8L98,17.4l-11.8,6.5c-3-1.7-6.2-3-9.6-4L72.9,7H55.1
+                l-3.7,13c-3.3,1-6.5,2.3-9.6,4L30,17.4L17.4,30l6.4,11.6c-1.6,3.1-2.9,6.4-3.8,9.7L7,55.1v17.9l13,3.7c1,3.3,2.3,6.5,4,9.6
+                L17.4,98L30,110.6l11.8-6.6c3,1.7,6.2,3,9.6,4l3.7,13h17.9l3.7-13c3.3-1,6.5-2.3,9.6-4l11.8,6.6L110.6,98l-6.5-11.8
+                c1.7-3,3-6.2,4-9.6L121,72.9z"/>
+            </g>
           </g>
         </symbol>
       </svg>
