@@ -117,7 +117,7 @@
 @media (max-width: 767px) { .depoimentos .carrossel-depoimentos { padding-top: 40px; width: 100%; } }
 .depoimentos .carrossel-depoimentos .icon { width: 180px; height: 130px; position: absolute; top: -20px; left: -60px; }
 @media (max-width: 767px) { .depoimentos .carrossel-depoimentos .icon { width: 110px; left: -30px; } }
-.depoimentos .carrossel-depoimentos .swiper-button-prev, .depoimentos .carrossel-depoimentos .swiper-button-next { width: 60px; height: 60px; background: #fff; display: flex; align-items: center; justify-content: center; border-radius: 50%; margin-top: 20px; box-shadow: 0px 3px 6px #00000029; transition: .3s; }
+.depoimentos .carrossel-depoimentos .swiper-button-prev, .depoimentos .carrossel-depoimentos .swiper-button-next { width: 50px; height: 50px; background: #fff; display: flex; align-items: center; justify-content: center; border-radius: 50%; margin-top: 20px; box-shadow: 0px 3px 6px #00000029; transition: .3s; }
 @media (max-width: 767px) { .depoimentos .carrossel-depoimentos .swiper-button-prev, .depoimentos .carrossel-depoimentos .swiper-button-next { width: 30px; height: 30px; } }
 .depoimentos .carrossel-depoimentos .swiper-button-prev:after, .depoimentos .carrossel-depoimentos .swiper-button-next:after { font-size: 24px; color: #FF6D00; }
 @media (max-width: 767px) { .depoimentos .carrossel-depoimentos .swiper-button-prev:after, .depoimentos .carrossel-depoimentos .swiper-button-next:after { font-size: 15px; } }
