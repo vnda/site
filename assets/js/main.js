@@ -317,6 +317,8 @@ $(document).ready(function(){
         }
       });
     }
+
+    gtag_report_conversion();
   });
 
   $('[data-form-phone]').on('submit', function(e){
