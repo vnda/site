@@ -93,13 +93,13 @@ $(document).ready(function(){
     },
     breakpoints: {
       320: {
-        spaceBetween: 30
+        spaceBetween: 15
       },
       480: {
-        spaceBetween: 45
+        spaceBetween: 30
       },
       640: {
-        spaceBetween: 60
+        spaceBetween: 30
       }
     }
   })

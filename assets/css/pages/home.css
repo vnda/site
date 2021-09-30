@@ -56,7 +56,7 @@
 .cases .outros-cases .case { display: flex; align-items: center; justify-content: center; width: auto; height: auto; }
 .cases .outros-cases .case:hover img:first-child { display: block; }
 .cases .outros-cases .case:hover img:last-child { display: none; }
-.cases .outros-cases .case img { max-height: 30px; max-width: 150px; transition: .3s; }
+.cases .outros-cases .case img { max-height: 35px; max-width: 150px; transition: .3s; }
 .cases .outros-cases .case img:first-child { display: none; }
 .cases .outros-cases .case img:last-child { display: block; }
 .cases .outros-cases .swiper-button-prev, .cases .outros-cases .swiper-button-next { width: 40px; height: 40px; background: #fff; display: flex; align-items: center; justify-content: center; border-radius: 50%; margin-top: 0; box-shadow: 0px 3px 6px #00000029; transition: .3s; }
