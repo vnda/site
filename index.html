@@ -678,7 +678,7 @@
               </div>
             </form>
             <script type="text/javascript">
-              window.cfields = {"8":"nome_da_loja","2":"site_da_loja"};
+              window.cfields = {"8":"nome_da_loja","2":"site_da_loja","5":"utm_medium","4":"utm_source","6":"utm_campaign"};
               window._show_thank_you = function(id, message, trackcmp_url, email) {
                 var form = document.getElementById('_form_' + id + '_'), thank_you = form.querySelector('._form-thank-you');
                 form.querySelector('._form-content').style.display = 'none';
@@ -754,13 +754,12 @@
                 var _removed = false;
                 var form_to_submit = document.getElementById('_form_13_');
                 var allInputs = form_to_submit.querySelectorAll('input, select, textarea'), tooltips = [], submitted = false;
-              
+            
                 var getUrlParam = function(name) {
-                  var regexStr = '[\?&]' + name + '=([^&#]*)';
-                  var results = new RegExp(regexStr, 'i').exec(window.location.href);
-                  return results != undefined ? decodeURIComponent(results[1]) : false;
+                  var params = new URLSearchParams(window.location.search);
+                  return params.get(name) || false;
                 };
-              
+            
                 for (var i = 0; i < allInputs.length; i++) {
                   var regexStr = "field\\[(\\d+)\\]";
                   var results = new RegExp(regexStr).exec(allInputs[i].name);
@@ -770,7 +769,7 @@
                     allInputs[i].dataset.name = allInputs[i].name;
                   }
                   var fieldVal = getUrlParam(allInputs[i].dataset.name);
-              
+            
                   if (fieldVal) {
                     if (allInputs[i].dataset.autofill === "false") {
                       continue;
@@ -784,7 +783,7 @@
                     }
                   }
                 }
-              
+            
                 var remove_tooltips = function() {
                   for (var i = 0; i < tooltips.length; i++) {
                     tooltips[i].tip.parentNode.removeChild(tooltips[i].tip);
@@ -980,6 +979,21 @@
                 };
                 addEvent(window, 'resize', resize_tooltips);
                 addEvent(window, 'scroll', resize_tooltips);
+                window['recaptcha_callback'] = function() {
+                // Get all recaptchas in the DOM (there may be more than one form on the page).
+                var recaptchas = document.getElementsByClassName("g-recaptcha");
+                for (var i in recaptchas) {
+                  // Set the recaptcha element ID, so the recaptcha can be applied to each element.
+                  var recaptcha_id = "recaptcha_" + i;
+                  recaptchas[i].id = recaptcha_id;
+                  var el = document.getElementById(recaptcha_id);
+                  if (el != null) {
+                    var sitekey = el.getAttribute("data-sitekey");
+                    var stoken = el.getAttribute("data-stoken");
+                    grecaptcha.render(recaptcha_id, {"sitekey":sitekey,"stoken":stoken});
+                  }
+                }
+              };  _load_script("//www.google.com/recaptcha/api.js?onload=recaptcha_callback&render=explicit");
                 window._old_serialize = null;
                 if (typeof serialize !== 'undefined') window._old_serialize = window.serialize;
                 _load_script("//d3rxaij56vjege.cloudfront.net/form-serialize/0.3/serialize.min.js", function() {
