@@ -183,6 +183,10 @@ $(document).ready(function(){
         $('[data-form-phone]').find('.msg-error').removeClass('active')
       }, 3500);
     });
+
+    console.log('form telefone enviado')
+
+    uet_report_conversion2();
   })
   
 
