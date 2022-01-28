@@ -623,16 +623,10 @@
               <input type="hidden" name="v" value="2" />
               <input type="hidden" name="or" value="1db8860203d2fb1cfa4d9284e3a6ee79" />
               <div class="_form-content">
-                <div class="field _form_element _x48971335 _full_width " >
-                  <input type="text" id="firstname" name="firstname" placeholder=" " />
-                  <label for="firstname" class="_form-label">
-                    Nome
-                  </label>
-                </div>
-                <div class="field _form_element _x76798491 _full_width " >
-                  <input type="text" id="lastname" name="lastname" placeholder=" " />
-                  <label for="lastname" class="_form-label">
-                    Sobrenome
+                <div class="field _form_element _x63226982 _full_width " >
+                  <input type="text" id="fullname" name="fullname" placeholder=" " />
+                  <label for="fullname" class="_form-label">
+                    Nome completo
                   </label>
                 </div>
                 <div class="field _form_element _x56796072 _full_width " >
@@ -659,6 +653,18 @@
                     Site da Loja
                   </label>
                 </div>
+                <div class="_form_element _field30 _full_width " >
+                  <input type="hidden" name="field[30]" value="" />
+                </div>
+                <div class="_form_element _field4 _full_width " >
+                  <input type="hidden" name="field[4]" value="" />
+                </div>
+                <div class="_form_element _field5 _full_width " >
+                  <input type="hidden" name="field[5]" value="" />
+                </div>
+                <div class="_form_element _field6 _full_width " >
+                  <input type="hidden" name="field[6]" value="" />
+                </div>
                 <div class="_form_element _x21909566 _full_width" style="margin-bottom: 20px;" >
                   <span for="ls" class="_form-label">
                     Por favor, confirme os seus dados*
@@ -678,7 +684,7 @@
               </div>
             </form>
             <script type="text/javascript">
-              window.cfields = {"8":"nome_da_loja","2":"site_da_loja","5":"utm_medium","4":"utm_source","6":"utm_campaign"};
+              window.cfields = {"8":"nome_da_loja","2":"site_da_loja","30":"origem_do_contato_1","4":"utm_source","5":"utm_medium","6":"utm_campaign"};
               window._show_thank_you = function(id, message, trackcmp_url, email) {
                 var form = document.getElementById('_form_' + id + '_'), thank_you = form.querySelector('._form-thank-you');
                 form.querySelector('._form-content').style.display = 'none';
@@ -754,12 +760,12 @@
                 var _removed = false;
                 var form_to_submit = document.getElementById('_form_13_');
                 var allInputs = form_to_submit.querySelectorAll('input, select, textarea'), tooltips = [], submitted = false;
-            
+              
                 var getUrlParam = function(name) {
                   var params = new URLSearchParams(window.location.search);
                   return params.get(name) || false;
                 };
-            
+              
                 for (var i = 0; i < allInputs.length; i++) {
                   var regexStr = "field\\[(\\d+)\\]";
                   var results = new RegExp(regexStr).exec(allInputs[i].name);
@@ -769,7 +775,7 @@
                     allInputs[i].dataset.name = allInputs[i].name;
                   }
                   var fieldVal = getUrlParam(allInputs[i].dataset.name);
-            
+              
                   if (fieldVal) {
                     if (allInputs[i].dataset.autofill === "false") {
                       continue;
@@ -783,7 +789,7 @@
                     }
                   }
                 }
-            
+              
                 var remove_tooltips = function() {
                   for (var i = 0; i < tooltips.length; i++) {
                     tooltips[i].tip.parentNode.removeChild(tooltips[i].tip);
