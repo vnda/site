@@ -621,8 +621,20 @@
               <input type="hidden" name="m" value="0" />
               <input type="hidden" name="act" value="sub" />
               <input type="hidden" name="v" value="2" />
-              <input type="hidden" name="or" value="3baf4052e10b6c21f1c96d559f911b49" />
+              <input type="hidden" name="or" value="68699665537df019c8c5ff4988c8cd89" />
               <div class="_form-content">
+                <div class="field _form_element _x77229590 _full_width _clear" >
+                  <div class="_form-title">
+                    Cadastre-se para receber atualizações por e-mail
+                  </div>
+                </div>
+                <div class="field _form_element _x18035057 _full_width _clear" >
+                  <div class="_html-code">
+                    <p>
+                      Adicione uma mensagem descritiva dizendo o que seu visitante pode esperar aqui.
+                    </p>
+                  </div>
+                </div>
                 <div class="field _form_element _x63226982 _full_width " >
                   <input type="text" id="fullname" name="fullname" placeholder=" " />
                   <label for="fullname" class="_form-label">
@@ -630,9 +642,9 @@
                   </label>
                 </div>
                 <div class="field _form_element _x56796072 _full_width " >
-                  <input type="text" id="phone" name="phone" placeholder=" " />
+                  <input type="text" id="phone" name="phone" placeholder=" " required/>
                   <label for="phone" class="_form-label">
-                    Telefone
+                    Telefone*
                   </label>
                 </div>
                 <div class="field _form_element _x20341954 _full_width " >
@@ -672,7 +684,7 @@
                   <div class="g-recaptcha" data-sitekey="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go">
                   </div>
                 </div>
-                <div class="_button-wrapper _full_width" style="margin-top: 50px;">
+                <div class="_button-wrapper _full_width">
                   <button id="_form_13_submit" class="btn" type="submit">
                     Enviar
                   </button>
@@ -760,12 +772,12 @@
                 var _removed = false;
                 var form_to_submit = document.getElementById('_form_13_');
                 var allInputs = form_to_submit.querySelectorAll('input, select, textarea'), tooltips = [], submitted = false;
-            
+              
                 var getUrlParam = function(name) {
                   var params = new URLSearchParams(window.location.search);
                   return params.get(name) || false;
                 };
-            
+              
                 for (var i = 0; i < allInputs.length; i++) {
                   var regexStr = "field\\[(\\d+)\\]";
                   var results = new RegExp(regexStr).exec(allInputs[i].name);
@@ -775,7 +787,7 @@
                     allInputs[i].dataset.name = allInputs[i].name;
                   }
                   var fieldVal = getUrlParam(allInputs[i].dataset.name);
-            
+              
                   if (fieldVal) {
                     if (allInputs[i].dataset.autofill === "false") {
                       continue;
@@ -789,7 +801,7 @@
                     }
                   }
                 }
-            
+              
                 var remove_tooltips = function() {
                   for (var i = 0; i < tooltips.length; i++) {
                     tooltips[i].tip.parentNode.removeChild(tooltips[i].tip);
@@ -1019,7 +1031,7 @@
                   return false;
                 };
                 addEvent(form_to_submit, 'submit', form_submit);
-              })();
+              })();              
             </script>
           </div>
           <div class="right">
