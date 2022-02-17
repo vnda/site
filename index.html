@@ -158,7 +158,7 @@
           </li>
         </ul>
         <a href="https://www.vnda.com.br/#contato" class="btn start-ecommerce">
-          Iniciar E-commerce
+          Solicitar contato
         </a>
       </div>
     </header>
@@ -179,7 +179,7 @@
                   Erro! Tente novamente.
                 </div>
               </form>
-              <a href="https://www.vnda.com.br/#contato" class="start-now btn">Começar agora</a>
+              <a href="https://vnda.ac-page.com/self-acquisition-step-one" class="start-now btn">Criar loja agora</a>
             </div>
           </div>
           <div class="right">
@@ -635,24 +635,12 @@
               <input type="hidden" name="m" value="0" />
               <input type="hidden" name="act" value="sub" />
               <input type="hidden" name="v" value="2" />
-              <input type="hidden" name="or" value="68699665537df019c8c5ff4988c8cd89" />
+              <input type="hidden" name="or" value="adbff2b82c8d4235c76c21810fcd0319" />
               <div class="_form-content">
-                <div class="field _form_element _x77229590 _full_width _clear" >
-                  <div class="_form-title">
-                    Cadastre-se para receber atualizações por e-mail
-                  </div>
-                </div>
-                <div class="field _form_element _x18035057 _full_width _clear" >
-                  <div class="_html-code">
-                    <p>
-                      Adicione uma mensagem descritiva dizendo o que seu visitante pode esperar aqui.
-                    </p>
-                  </div>
-                </div>
                 <div class="field _form_element _x63226982 _full_width " >
-                  <input type="text" id="fullname" name="fullname" placeholder=" " />
+                  <input type="text" id="fullname" name="fullname" placeholder=" " required/>
                   <label for="fullname" class="_form-label">
-                    Nome completo
+                    Seu nome completo*
                   </label>
                 </div>
                 <div class="field _form_element _x56796072 _full_width " >
@@ -668,15 +656,60 @@
                   </label>
                 </div>
                 <div class="field _form_element _field8 _full_width " >
-                  <input type="text" id="field[8]" name="field[8]" value="" placeholder=" " />
+                  <input type="text" id="field[8]" name="field[8]" value="" placeholder=" " required/>
                   <label for="field[8]" class="_form-label">
-                    Nome da Loja
+                    Nome da sua empresa*
                   </label>
                 </div>
                 <div class="field _form_element _field2 _full_width " >
                   <input type="text" id="field[2]" name="field[2]" value="" placeholder=" " />
                   <label for="field[2]" class="_form-label">
-                    Site da Loja
+                    Site da sua empresa
+                  </label>
+                </div>
+                <div class="field _form_element _field42 _full_width " >
+                  <select name="field[42]" id="field[42]" required>
+                    <option value="">
+                    </option>
+                    <option value="SIM" >
+                      SIM
+                    </option>
+                    <option value="NÃO" >
+                      NÃO
+                    </option>
+                  </select>
+                  <label for="field[42]" class="_form-label">
+                    Você quer criar um e-commerce ou migrar de plataforma?*
+                  </label>
+                </div>
+                <div class="field _form_element _field20 _full_width " >
+                  <select name="field[20]" id="field[20]" required>
+                    <option selected>
+                    </option>
+                    <option value="Até R$120 mil/anual" >
+                      Até R$120 mil/anual
+                    </option>
+                    <option value="De R$120 mil/anual a R$600 mil/anual" >
+                      De R$120 mil/anual a R$600 mil/anual
+                    </option>
+                    <option value="De R$600 mil/anual a R$1.4 milhões/anual" >
+                      De R$600 mil/anual a R$1.4 milhões/anual
+                    </option>
+                    <option value="De R$1.4 milhões/anual a R$4.8 milhões/anual" >
+                      De R$1.4 milhões/anual a R$4.8 milhões/anual
+                    </option>
+                    <option value="De R$4.8 milhões/anual a R$9.6 milhões/anual" >
+                      De R$4.8 milhões/anual a R$9.6 milhões/anual
+                    </option>
+                    <option value="De R$9.6 milhões/anual a R$100 milhões/anual" >
+                      De R$9.6 milhões/anual a R$100 milhões/anual
+                    </option>
+                    <option value="Acima de R$100 milhões/anual" >
+                      Acima de R$100 milhões/anual
+                    </option>
+                  </select>
+                  <label for="field[20]" class="_form-label">
+                    Faturamento Médio*
                   </label>
                 </div>
                 <div class="field _form_element _field30 _full_width " >
@@ -710,7 +743,7 @@
               </div>
             </form>
             <script type="text/javascript">
-              window.cfields = {"8":"nome_da_loja","2":"site_da_loja","30":"origem_do_contato_1","4":"utm_source","5":"utm_medium","6":"utm_campaign"};
+              window.cfields = {"8":"nome_da_loja","2":"site_da_loja","42":"voc_quer_criar_um_ecommerce_ou_migrar_de_plataforma","20":"faturamento_mdio","30":"origem_do_contato_1","4":"utm_source","5":"utm_medium","6":"utm_campaign"};
               window._show_thank_you = function(id, message, trackcmp_url, email) {
                 var form = document.getElementById('_form_' + id + '_'), thank_you = form.querySelector('._form-thank-you');
                 form.querySelector('._form-content').style.display = 'none';
@@ -786,12 +819,12 @@
                 var _removed = false;
                 var form_to_submit = document.getElementById('_form_13_');
                 var allInputs = form_to_submit.querySelectorAll('input, select, textarea'), tooltips = [], submitted = false;
-              
+            
                 var getUrlParam = function(name) {
                   var params = new URLSearchParams(window.location.search);
                   return params.get(name) || false;
                 };
-              
+            
                 for (var i = 0; i < allInputs.length; i++) {
                   var regexStr = "field\\[(\\d+)\\]";
                   var results = new RegExp(regexStr).exec(allInputs[i].name);
@@ -801,7 +834,7 @@
                     allInputs[i].dataset.name = allInputs[i].name;
                   }
                   var fieldVal = getUrlParam(allInputs[i].dataset.name);
-              
+            
                   if (fieldVal) {
                     if (allInputs[i].dataset.autofill === "false") {
                       continue;
@@ -815,7 +848,7 @@
                     }
                   }
                 }
-              
+            
                 var remove_tooltips = function() {
                   for (var i = 0; i < tooltips.length; i++) {
                     tooltips[i].tip.parentNode.removeChild(tooltips[i].tip);
@@ -1045,7 +1078,7 @@
                   return false;
                 };
                 addEvent(form_to_submit, 'submit', form_submit);
-              })();              
+              })();
             </script>
           </div>
           <div class="right">
