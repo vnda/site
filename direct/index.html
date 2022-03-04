@@ -401,7 +401,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section>      
       <section class="section contact" id="contato">
         <h3>Vamos conversar?</h3>
         <div class="container">
@@ -419,7 +419,7 @@
                   C428.52,216.343,450.766,188.6,503.39,151C497.933,153.018,493.944,157.749,503.39,151z"/>
               </g>
             </svg>
-            <img src="/assets/images/cafe.svg" alt="">
+            <img src="assets/images/cafe.svg" alt="">
           </div>
           <div class="center">
             <style>
@@ -487,7 +487,7 @@
               <input type="hidden" name="m" value="0" />
               <input type="hidden" name="act" value="sub" />
               <input type="hidden" name="v" value="2" />
-              <input type="hidden" name="or" value="adbff2b82c8d4235c76c21810fcd0319" />
+              <input type="hidden" name="or" value="374ca65687280159ab788d6b1bae16cd" />
               <div class="_form-content">
                 <div class="field _form_element _x63226982 _full_width " >
                   <input type="text" id="fullname" name="fullname" placeholder=" " required/>
@@ -498,7 +498,7 @@
                 <div class="field _form_element _x56796072 _full_width " >
                   <input type="text" id="phone" name="phone" placeholder=" " required/>
                   <label for="phone" class="_form-label">
-                    Telefone*
+                    Seu telefone*
                   </label>
                 </div>
                 <div class="field _form_element _x20341954 _full_width " >
@@ -521,7 +521,7 @@
                 </div>
                 <div class="field _form_element _field42 _full_width " >
                   <select name="field[42]" id="field[42]" required>
-                    <option value="">
+                    <option selected>
                     </option>
                     <option value="SIM" >
                       SIM
@@ -584,7 +584,7 @@
                   </div>
                 </div>
                 <div class="_button-wrapper _full_width">
-                  <button id="_form_13_submit" class="btn" type="submit">
+                  <button id="_form_13_submit" class="btn _submit" type="submit">
                     Enviar
                   </button>
                 </div>
@@ -849,7 +849,7 @@
                     for (var i = 0, len = allInputs.length; i < len; i++) {
                       var input = allInputs[i];
                       if (needs_validate(input)) {
-                        if (input.type == 'text') {
+                        if (input.type == 'text' || input.type == 'number' || input.type == 'time') {
                           addEvent(input, 'blur', function() {
                             this.value = this.value.trim();
                             validate_field(this, true);
@@ -911,12 +911,7 @@
                   }
                 }
               };  _load_script("//www.google.com/recaptcha/api.js?onload=recaptcha_callback&render=explicit");
-                window._old_serialize = null;
-                if (typeof serialize !== 'undefined') window._old_serialize = window.serialize;
-                _load_script("//d3rxaij56vjege.cloudfront.net/form-serialize/0.3/serialize.min.js", function() {
-                  window._form_serialize = window.serialize;
-                  if (window._old_serialize) window.serialize = window._old_serialize;
-                });
+                  var _form_serialize = function(form){if(!form||form.nodeName!=="FORM"){return }var i,j,q=[];for(i=0;i<form.elements.length;i++){if(form.elements[i].name===""){continue}switch(form.elements[i].nodeName){case"INPUT":switch(form.elements[i].type){case"text":case"number":case"date":case"time":case"hidden":case"password":case"button":case"reset":case"submit":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break;case"checkbox":case"radio":if(form.elements[i].checked){q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value))}break;case"file":break}break;case"TEXTAREA":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break;case"SELECT":switch(form.elements[i].type){case"select-one":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break;case"select-multiple":for(j=0;j<form.elements[i].options.length;j++){if(form.elements[i].options[j].selected){q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].options[j].value))}}break}break;case"BUTTON":switch(form.elements[i].type){case"reset":case"submit":case"button":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break}break}}return q.join("&")};
                 var form_submit = function(e) {
                   e.preventDefault();
                   if (validate_form()) {
@@ -931,7 +926,7 @@
                 };
                 addEvent(form_to_submit, 'submit', form_submit);
               })();
-            </script>
+            </script>            
           </div>
           <div class="right">
             <div class="info">
