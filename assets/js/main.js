@@ -246,5 +246,24 @@ $(document).ready(function(){
     console.log(href);
     window.location.href = href;
   })
+
+  $(".faq .tab .title-tab").on("click", function () {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(this).closest(".tab").find(".text").height(0);
+    } else {
+      $(this).addClass("active");
+      $(this)
+        .closest(".tab")
+        .find(".text")
+        .height(
+          $(this)
+            .closest(".tab")
+            .find(".text")
+            .find("> div")
+            .height() + 20
+        );
+    }
+  });
 })
 
