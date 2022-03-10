@@ -12,7 +12,7 @@
 .banner-principal p strong:after { content: ""; width: 100%; height: 10px; display: inline-block; background: #FFA000; position: absolute; left: 0; top: 60%; z-index: -9; transition: 0.3s; }
 .banner-principal .contact { display: flex; align-items: center; justify-content: flex-start; margin-top: 60px; }
 @media (max-width: 767px) { .banner-principal .contact { margin-top: 30px; flex-wrap: wrap; } }
-.banner-principal .contact form { border-radius: 34px; border: 1px solid #B5B5B5; border-color: #FF6D00; overflow: hidden; display: flex; margin-right: 30px; background: #fff; position: relative; }
+.banner-principal .contact .btn:first-child { margin-right: 30px; }
 @media (max-width: 767px) { .banner-principal .contact form { width: 100%; margin-right: 0; margin-bottom: 15px; } }
 .banner-principal .contact form .msg-success, .banner-principal .contact form .msg-error { width: 100%; position: absolute; left: 0; top: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: #ff6d00; color: white; font-size: 13px; font-weight: 600; transition: .3s; transform: translateY(0%); }
 .banner-principal .contact form .msg-success.active, .banner-principal .contact form .msg-error.active { transform: translateY(-100%); }
