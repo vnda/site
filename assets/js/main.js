@@ -238,7 +238,7 @@ $(document).ready(function(){
     }
   })
 
-  $('.start-now').on('click', function(e){
+  $('a').on('click', function(e){
     e.preventDefault();
     
     const queryString = window.location.search;
