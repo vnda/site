@@ -226,6 +226,8 @@ $(document).ready(function(){
     }
   })
 
+  console.log('teste')
+
   $('a').on('click', function(e){
     e.preventDefault();
     
