@@ -216,17 +216,6 @@ $(document).ready(function(){
     }
   }
 
-  $('.page-home a[href*="#"]').on('click', function(){
-    var hash_url = '#' + $(this).attr('href').split('#')[1].split('?')[0];
-    console.log("hash_url", hash_url)
-    if (hash_url != '') {
-      var scr = $(hash_url).offset().top - 50;    
-      $('html').animate({
-        scrollTop: scr
-      }, 1000);
-    }
-  })
-
   $('.question h6').on('click', function(){
     if ($(this).closest('.question').find('.text').height() == 0){
       $(this).closest('.question').find('.text').height($(this).closest('.question').find('.text').find('div').height())
@@ -243,7 +232,19 @@ $(document).ready(function(){
     const queryString = window.location.search;
     var href = $(this).attr('href') + queryString;
     console.log(href);
-    window.location.href = href;
+
+    if (href.includes('#')) {
+      var hash_url = '#' + $(this).attr('href').split('#')[1].split('?')[0];
+      console.log("hash_url", hash_url)
+      if (hash_url != '') {
+        var scr = $(hash_url).offset().top - 50;    
+        $('html').animate({
+          scrollTop: scr
+        }, 1000);
+      }
+    } else {
+      window.location.href = href;
+    }
   })
 
   $(".faq .tab .title-tab").on("click", function () {
