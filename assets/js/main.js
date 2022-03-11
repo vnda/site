@@ -218,6 +218,7 @@ $(document).ready(function(){
 
   $('.page-home a[href*="#"]').on('click', function(){
     var hash_url = '#' + $(this).attr('href').split('#')[1].split('?')[0];
+    console.log("hash_url", hash_url)
     if (hash_url != '') {
       var scr = $(hash_url).offset().top - 50;    
       $('html').animate({
