@@ -217,9 +217,7 @@ $(document).ready(function(){
   }
 
   $('.page-home a[href*="#"]').on('click', function(){
-    var hash_url = '#' + $(this).attr('href').split('#')[1];
-
-    console.log('oie')
+    var hash_url = '#' + $(this).attr('href').split('#')[1].split('?')[0];
     if (hash_url != '') {
       var scr = $(hash_url).offset().top - 50;    
       $('html').animate({
