@@ -235,7 +235,7 @@ $(document).ready(function(){
     var href = $(this).attr('href') + queryString;
     console.log(href);
 
-    if (href.includes('#')) {
+    if (href.includes('#') && $('.page-home').length > 0) {
       var hash_url = '#' + $(this).attr('href').split('#')[1].split('?')[0];
       console.log("hash_url", hash_url)
       if (hash_url != '') {
