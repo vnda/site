@@ -177,8 +177,8 @@
 @media (max-width: 767px) { .contact img { margin-top: 30px; } }
 .contact .info { display: flex; align-items: flex-start; justify-content: flex-start; margin-bottom: 15px; }
 .contact .info svg { margin-right: 15px; width: 30px; height: 30px; }
-.contact p, .contact a { margin-bottom: 60px; font: 12px/22px "Montserrat",sans-serif }
-@media (max-width: 767px) { .contact p, .contact a { margin-bottom: 30px; display: block } }
+.contact p, .contact a { margin-bottom: 60px; font: 12px/22px "Montserrat",sans-serif;  display: block }
+@media (max-width: 767px) { .contact p, .contact a { margin-bottom: 30px; } }
 @media (max-width: 767px) { .contact form { margin-bottom: 30px; } }
 .contact form input, .contact form textarea, .contact form select { font: italic 14px/19px "Montserrat", sans-serif; padding: 15px; border-radius: 5px; border: 1px solid #B5B5B5; width: 100%; background: transparent; box-shadow: 0px 3px 6px #00000029; }
 @media (max-width: 767px) { .contact form input, .contact form textarea, .contact form select { font: italic 12px/19px "Montserrat", sans-serif; padding: 10px; } }
