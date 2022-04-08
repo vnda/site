@@ -189,7 +189,7 @@
 @media (max-width: 767px) { .contact form .field { margin-bottom: 10px; } }
 .contact form label { position: absolute; top: 50%; left: 15px; font: italic 14px/19px "Montserrat", sans-serif; color: #263238; transition: .3s; background: #fff; padding: 0 5px; z-index: -9; transform: translateY(-50%); display: flex; }
 .contact form label .req { color: #FF6D00; }
-@media (max-width: 767px) { .contact form label { font: italic 12px/19px "Montserrat", sans-serif; left: 10px; } }
+@media (max-width: 767px) { .contact form label { font: italic 12px/19px "Montserrat", sans-serif; left: 5px; white-space: nowrap; } }
 .contact form textarea + label { top: 25px; }
 .contact .left { position: relative; }
 @media (max-width: 767px) { .contact .left { order: 3; } }
