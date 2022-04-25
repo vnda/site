@@ -204,7 +204,7 @@
 .page-cases .banner-principal p{ margin-bottom: 20px;}
 .page-cases .banner-principal a{ margin-top: 20px; display: inline-block; }
 .page-cases .melhor-uso .content { flex-wrap: wrap; justify-content: flex-start; }
-.page-cases .melhor-uso .content .card { width: calc(25% - 30px); }
+.page-cases .melhor-uso .content .card { width: calc(33.33% - 30px); }
 @media (max-width: 767px){ .page-cases .melhor-uso .content .card { width: calc(100% - 30px); } }
 .page-cases .melhor-uso .content .card p { color: #263238; }
 .page-cases .melhor-uso .content .card p strong { font-size: 16px; }
