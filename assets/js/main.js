@@ -74,6 +74,9 @@ $(document).ready(function(){
 
   var casesPrincipais = new Swiper($('.cases-principais').find('.swiper-container'), {
     slidesPerView: 1,
+    autoplay: {
+      delay: 5000,
+    },
     pagination: {
       el: $('.cases-principais').find('.swiper-pagination'),
       clickable: true,
