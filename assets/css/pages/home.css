@@ -221,7 +221,7 @@
 .page-cases .conteudo-plataforma .text p { font: 14px/24px "Montserrat", sans-serif; }
 .page-cases .conteudo-plataforma .image { height: auto; padding-bottom: 0; width: 50%; }
 @media (max-width: 767px) { .page-cases .conteudo-plataforma .image { width: 100%; margin-bottom: 30px; } }
-.page-cases .conteudo-plataforma .image img { width: 100%; height: auto; max-height: 500px; margin: 0 auto; position: relative; left: 0; top: 0; transform: none; border: 0; border-radius: 40px; background: transparent; }
+.page-cases .conteudo-plataforma .image img { width: 100%; height: auto; max-height: 500px; margin: 0 auto; position: relative; left: 0; top: 0; transform: none; border: 0; border-radius: 40px; background: transparent; object-fit: cover; }
 .page-cases .case-interna{ padding-right: 5%; padding-left: 5%; max-width: 1000px; margin: 0 auto; padding-bottom: 50px; }
 .page-cases .case-interna a:not(.btn) { position: relative; font-weight: normal; z-index: 9; }
 .page-cases .case-interna a:not(.btn):after { content: ""; width: 100%; height: 10px; display: inline-block; background: #FFA000; position: absolute; left: 0; top: 60%; z-index: -9; transition: 0.3s; }
